@@ -1,0 +1,57 @@
+body {
+	margin: 3em auto;
+	padding: 0;
+	background-color: #eaebee;
+	font-family: Arial, Verdana, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333;
+	line-height: 1.4em;
+	
+}
+
+select, button{
+  width:250px;
+  height: 28px;
+}
+input{
+  width:250px;
+  height: 28px;
+}
+textarea{
+  width:500px;
+  height: 175px;
+}
+h1 {
+	font-weight: 200;
+	margin-bottom: 1rem;
+
+}
+.noMirror{
+ float:left;
+ margin-left: 21px;
+}
+.header{
+  height: 50px;
+  margin: auto;
+  text-align: center;
+}
+.mainContainer{
+  background: #fafcff;
+  width:960px;
+  padding: 5px;
+  margin:auto;
+}
+
+.content {
+  margin: 17px;
+}
+.labelLeft{
+  float:left;
+  width: 350px;
+}
+
+.clear{
+  /*border: 1px solid #999999;*/
+  color: #666;
+}

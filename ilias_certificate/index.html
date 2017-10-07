@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ilias Zertifikat</title>
+    <link href="resources/css/shared.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="resources/js/ilias_certificate.js"></script>
+    <script type="text/javascript" src="vendors/jszip-v3.1.4-22/dist/jszip.js"></script>
+    <script type="text/javascript" src="vendors/jszip-v3.1.4-22/vendor/FileSaver.js"></script>
+    <script type="text/javascript" src="vendors/jszip-utils-master/dist/jszip-utils.js"></script>
+    <!--
+        <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+    -->
+</head>
+<body>
+    <div id="container" class="mainContainer">
+        <header class="header">
+            <div class="row">
+                <a class="navbar-brand" href="https://oer.uni-marburg.de/goto.php?target=root_1&client_id=mriliasmooc" target="_top">
+                    <img class="noMirror" src="resources/images/logo.svg" alt="Logo">
+                </a><h1> Ilias Zertifikat</h1>
+            </div>
+
+        </header>
+        <form name="Formular" action="">
+            <!--
+            <div id="usalutation" class="content">
+                <label class="labelLeft" for="usalutation">USER_SALUTATION:</label>
+                <select class="clear" name="usalutation" size="1">
+                    <option value="us0">keine</option>
+                    <option value="Sehr geehrte">Sehr geehrte</option>
+                    <option value="Sehr geehrter">Sehr geehrter</option>
+                </select>
+            </div>
+            <div id="utitle" class="content">
+                <label class="labelLeft" for="utitle">USER_TITLE:</label>
+                <select class="clear" name="utitle" size="1">
+                    <option value="ut0">keine</option>
+                    <option value="Dr.">Doktor/in</option>
+                    <option value="Prof.">Professor/in</option>
+                </select>
+            </div>
+            <div id="ufirst" class="content">
+                <label class="labelLeft" for="ufirst">USER_FIRSTNAME:</label>
+                <input class="clear" class="input" type="text" id="ufirst" name="ufirst">
+            </div>
+            <div id="ulast" class="content">
+                <label class="labelLeft" for="ulast">USER_LASTNAME: </label>
+                <input class="clear" type="text" id="ulast" name="ulast">
+            </div>
+             -->
+            <div id="ctitle" class="content">
+                <label class="labelLeft" for="ctitle">Veranstaltung:</label>
+                <input class="clear" type="text" id="ctitle" name="ctitle">
+            </div>
+            <div id="ccontent" class="content">
+                <label class="labelLeft" for="ccontent">Inhalt der Veranstaltung: </label>
+                <input class="clear" type="text" id="ccontent" name="ccontent">
+            </div>
+            <div id="carea1" class="content">
+                <label class="labelLeft" for="carea1">Teilbereich I:</label>
+                <textarea class="clear" name="carea1"></textarea>
+            </div>
+            <div id="carea2" class="content">
+                <label class="labelLeft" for="carea2">Teilbereich II: </label>
+                <textarea class="clear" name="carea2"></textarea>
+            </div>
+            <div id="zname" class="content">
+                <label class="labelLeft" for="carea2">Zertifikat Vorlage exportieren: </label>
+                <button class="clear" type="button" onclick="exportToXML('certificate.xml')" id="button">Start</button>
+            </div>
+        </form>
+
+</body>
+</html>
