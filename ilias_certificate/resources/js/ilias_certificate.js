@@ -146,3 +146,33 @@ function exportToXML(filename) {
 
 
 
+/*
+
+var coffee = document.forms[0];
+var txt = "";
+var i;
+for (i = 0; i < coffee.length; i++) {
+  if (coffee[i].checked) {
+    txt = txt + coffee[i].value + " ";
+  }
+}
+document.getElementById("order").value = "You ordered a coffee with: " + txt;
+
+document.getElementById("fname").value = document.getElementById("fname").value.toUpperCase();
+
+
+
+
+<script type="text/javascript"> <!-- Script-Bereich einleiten -->
+
+function auswahl() {
+    var i, Text = "";
+
+    for (i = 0; i < 4; i++)
+        if (document.demo.elements[i].checked)
+            Text = Text + document.demo.elements[i].value + "\n";
+
+    document.demo.anzeige.value = Text;
+}
+
+*/
