@@ -50,8 +50,28 @@ h1 {
   float:left;
   width: 350px;
 }
-
+.carea1-content-title{
+  font-weight: bold;
+}
+.carea1-content-div{
+  border-bottom: 1px solid #999;
+  float: left;
+  text-align: left;
+}
+.carea1-content-checkbox{
+  margin: 0;
+  width: 30px;
+}
+.carea1-content-label{
+  float: right;
+  height: 50px;
+  width: 890px;
+}
 .clear{
   /*border: 1px solid #999999;*/
   color: #666;
+}
+
+#carea1 {
+    height: 815px;
 }

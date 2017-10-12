@@ -1,14 +1,71 @@
-﻿var imported = document.createElement('script');
+/* 
+ A class to convert web-data xml file and export as zip. 
+ Create certificate templates for Ilias
+*/ 
+
+var imported = document.createElement('script');
 //imported.src = 'jszip-v3.1.4-22/dist/jszip.js';
 //imported.src = 'dist/jszip.min.js';
 
 document.head.appendChild(imported);
 
-function concatNode(node, text) {
-    var res = '';
-    res = node + '>' + text
+/* Titles checkboxs in the content area 1 */
+var carea1CheckboxAreaTitle = new Array();
+carea1CheckboxAreaTitle = ['I Medientheorie und Mediengesellschaft',
+                        'II Didaktik und Methodik des Medieneinsatzes',
+                        'III Mediennutzung',
+                        'IV Medien und Schulentwicklung',
+                        'V Lehrerrolle und Personalentwicklung'];
+      
+var carea1Checkbox = new Array();                    
+carea1Checkbox =  [['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
+['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
+['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
+['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.']
+];
+
+
+
+/* */
+function crElement(element, id, text, type, cName) {
+  var resElement = document.createElement(element);
+  if(type == 'checkbox'){ 
+      resElement.type = type; 
+      resElement.ckecked = false;
+      
+  } else {
+    resElement.innerHTML = text;
+  }
+  resElement.id = id;
+  resElement.className = cName;
+
+  return resElement;
 }
 
+
+/* */
+function addCheckboxs(){   
+  
+  for( var i = 0; i < carea1CheckboxAreaTitle.length; i++){
+    divNode = crElement('div', 'carea1'+i, '<p class="carea1-content-title">'+carea1CheckboxAreaTitle[i]+'</p>','div','carea1-content-div');
+    for( var j = 0; j < carea1Checkbox[i].length; j++){
+      div = crElement('div', 'carea1'+i+j, '','div','');
+      //Checkbox
+      childCheckbox = crElement('input', 'carea1-content-checkbox'+i+j, '', 'checkbox','carea1-content-checkbox');
+      //Label
+      childLabel = crElement('label', '', carea1Checkbox[i][j], 'label', 'carea1-content-label');
+      // alert(tempElement.className);
+      div.appendChild(childCheckbox);
+      div.appendChild(childLabel);
+      divNode.appendChild(div);
+    }
+    document.getElementById('carea1').appendChild(divNode);
+  }
+}
+
+addCheckboxs();
+
+/* */
 function enumerationNode(text) {
     var res = '';
     var text = text;
@@ -18,6 +75,19 @@ function enumerationNode(text) {
     res = '<fo:list-block space-before="1em" space-after="1em"><fo:list-item relative-align="baseline">' + text + '</fo:list-item></fo:list-block>';
     return res;
 }
+
+/* Check the user content */
+function checkFields(){
+  var res = true;
+  return res;
+}
+
+/* Read the content */
+function readFileds(){
+  var res = "";
+  return res;
+}
+
 
 function exportToXML(filename) {
     var today = new Date();
@@ -142,37 +212,3 @@ function exportToXML(filename) {
         });
     });
 }
-
-
-
-
-/*
-
-var coffee = document.forms[0];
-var txt = "";
-var i;
-for (i = 0; i < coffee.length; i++) {
-  if (coffee[i].checked) {
-    txt = txt + coffee[i].value + " ";
-  }
-}
-document.getElementById("order").value = "You ordered a coffee with: " + txt;
-
-document.getElementById("fname").value = document.getElementById("fname").value.toUpperCase();
-
-
-
-
-<script type="text/javascript"> <!-- Script-Bereich einleiten -->
-
-function auswahl() {
-    var i, Text = "";
-
-    for (i = 0; i < 4; i++)
-        if (document.demo.elements[i].checked)
-            Text = Text + document.demo.elements[i].value + "\n";
-
-    document.demo.anzeige.value = Text;
-}
-
-*/
