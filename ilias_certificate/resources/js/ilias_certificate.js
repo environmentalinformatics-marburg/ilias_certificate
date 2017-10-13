@@ -8,17 +8,22 @@ var imported = document.createElement('script');
 //imported.src = 'dist/jszip.min.js';
 
 document.head.appendChild(imported);
+var carea1CheckedTitle = Array();
+var carea1CheckedCheckbox = Array();
 
-/* Titles checkboxs in the content area 1 */
-var carea1CheckboxAreaTitle = new Array();
-carea1CheckboxAreaTitle = ['I Medientheorie und Mediengesellschaft',
+/* Titles of areas */
+var carea1Title = new Array();
+carea1Title = ['I Medientheorie und Mediengesellschaft',
                         'II Didaktik und Methodik des Medieneinsatzes',
                         'III Mediennutzung',
                         'IV Medien und Schulentwicklung',
                         'V Lehrerrolle und Personalentwicklung'];
-      
+                        
+/* Themas  */    
 var carea1Checkbox = new Array();                    
-carea1Checkbox =  [['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
+carea1Checkbox =  [
+['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
+['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
 ['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
 ['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
 ['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.']
@@ -26,13 +31,12 @@ carea1Checkbox =  [['Thematisierung aktueller Zusammenhänge zwischen Medien und
 
 
 
-/* */
-function crElement(element, id, text, type, cName) {
+/* Create html element*/
+function crElement(element, id, titel, text, type, cName) {
   var resElement = document.createElement(element);
   if(type == 'checkbox'){ 
-      resElement.type = type; 
-      resElement.ckecked = false;
-      
+      resElement.setAttribute('type', 'checkbox');
+     // resElement.setAttribute('onchange', 'onToggle('+ titel +',' + text +')');
   } else {
     resElement.innerHTML = text;
   }
@@ -43,17 +47,17 @@ function crElement(element, id, text, type, cName) {
 }
 
 
-/* */
+/* Add checkboxses and labels*/
 function addCheckboxs(){   
-  
-  for( var i = 0; i < carea1CheckboxAreaTitle.length; i++){
-    divNode = crElement('div', 'carea1'+i, '<p class="carea1-content-title">'+carea1CheckboxAreaTitle[i]+'</p>','div','carea1-content-div');
+  for( var i = 0; i < carea1Title.length; i++){
+    divNode = crElement('div', 'carea1'+i, '','<p class="carea1-content-title">'+carea1Title[i]+'</p>',  'div','carea1-content-div');
     for( var j = 0; j < carea1Checkbox[i].length; j++){
-      div = crElement('div', 'carea1'+i+j, '','div','');
+      div = crElement('div', 'carea1'+i+j, '', '', 'div', '');
       //Checkbox
-      childCheckbox = crElement('input', 'carea1-content-checkbox'+i+j, '', 'checkbox','carea1-content-checkbox');
+      childCheckbox = crElement('input', 'checkbox'+ i+''+j, i, j, 'checkbox','carea1-content-checkbox');
+            
       //Label
-      childLabel = crElement('label', '', carea1Checkbox[i][j], 'label', 'carea1-content-label');
+      childLabel = crElement('label', '', '', carea1Checkbox[i][j], 'label', 'carea1-content-label');
       // alert(tempElement.className);
       div.appendChild(childCheckbox);
       div.appendChild(childLabel);
@@ -64,6 +68,8 @@ function addCheckboxs(){
 }
 
 addCheckboxs();
+
+
 
 /* */
 function enumerationNode(text) {
@@ -76,17 +82,19 @@ function enumerationNode(text) {
     return res;
 }
 
-/* Check the user content */
+/* Check user chooses */
 function checkFields(){
   var res = true;
   return res;
 }
 
-/* Read the content */
-function readFileds(){
+/* Read content */
+function readFields(){
   var res = "";
   return res;
 }
+
+
 
 
 function exportToXML(filename) {
@@ -167,36 +175,33 @@ function exportToXML(filename) {
     if (document.forms[0].ccontent.value != '') xmlFile = xmlFile.replace(/\[COURSE_DESC]/gi, ufirst = document.forms[0].ccontent.value);
 
     // Course content
-    var cContent1 = document.forms[0].carea1.value;
-    var cContent1Res = '';
-    var enumerations = cContent1.split("\n");
+    var courseArea1 = '';
+    for (var i = 0; i < carea1Title.length; i++) {
+      var t = [false,false,false,false,false];
+      for(var j = 0; j < carea1Checkbox[i].length; j++) { 
+        if(document.getElementById('checkbox'+ i + '' + j).checked == true){
+                if(t[i] == false) {
+                  courseArea1 += '<fo:block text-align="justify">' + carea1Title[i] + '</fo:block> <fo:block>';
+                  t[i] = true;
+                }
+                courseArea1 += '<fo:list-item>' + carea1Checkbox[i][j] + '</fo:list-item> ';
+       }
+     } if (t[i] == true) courseArea1 += '</fo:block> ';
+   }
+
+    var carea2Content = document.forms[0].carea2.value;
+    var courseArea2 = '';
+    var enumerations = carea2Content.split("\n");
     for (var i = 0; i < enumerations.length; i++) {
         if (enumerations[i].indexOf('-') > -1) {
-            cContent1Res += enumerationNode(enumerations[i]);
+            courseArea2 += enumerationNode(enumerations[i]);
         } else {
-            cContent1Res += '<fo:block>' + enumerations[i] + '</fo:block> ';
-            //alert(cContent1Res);
+            courseArea2 += '<fo:block>' + enumerations[i] + '</fo:block> ';
         }
     }
 
-    //if (cContent1.indexOf('/n') > -1) {
-    //cContent1 = cContent1.replace(/\n/gi,'</fo:block><fo:block>' ); 
-    //cContent1 = '<fo:block>' + cContent1 + '</fo:block>';
-    //}
-
-    var cContent2 = document.forms[0].carea2.value;
-    var cContent2Res = '';
-    var enumerations = cContent2.split("\n");
-    for (var i = 0; i < enumerations.length; i++) {
-        if (enumerations[i].indexOf('-') > -1) {
-            cContent2Res += enumerationNode(enumerations[i]);
-        } else {
-            cContent2Res += '<fo:block>' + enumerations[i] + '</fo:block> ';
-        }
-    }
-
-    if (cContent1Res != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_1]/gi, cContent1Res);
-    if (cContent2Res != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_2]/gi, cContent2Res);
+    if (courseArea1 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_1]/gi, courseArea1);
+    if (courseArea2 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_2]/gi, courseArea2);
 
     var bg_image = "resources/images/background.jpg";
     var zipfilename = today.toISOString().substring(0, 10) + "_" + today.getUTCMilliseconds() + "_course_certificate.zip";
