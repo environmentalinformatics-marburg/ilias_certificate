@@ -138,12 +138,12 @@ function exportToXML(filename) {
       for(var j = 0; j < carea1Checkbox[i].length; j++) { 
         if(document.getElementById('checkbox'+ i + '' + j).checked == true){
                 if(t[i] == false) {
-                  courseArea1 += '<fo:block text-align="justify">' + carea1Title[i] + '</fo:block> <fo:block>';
+                  courseArea1 += '<fo:block><fo:block><fo:inline font-style="italic">Teilbereich ' + carea1Title[i] + '</fo:inline></fo:block><fo:list-block>';
                   t[i] = true;
                 }
-                courseArea1 += '<fo:list-item>' + carea1Checkbox[i][j] + '</fo:list-item> ';
+                courseArea1 += '<fo:list-item relative-align="baseline"><fo:block>' + carea1Checkbox[i][j] + '</fo:block></fo:list-item>';
        }
-     } if (t[i] == true) courseArea1 += '</fo:block> ';
+     } if (t[i] == true) courseArea1 += '</fo:list-block></fo:block> ';
    }
 
     var carea2Content = document.forms[0].carea2.value;
