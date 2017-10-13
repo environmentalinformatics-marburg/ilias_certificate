@@ -59,13 +59,14 @@ h1 {
   text-align: left;
 }
 .carea1-content-checkbox{
+  float: left;
   margin: 0;
   width: 30px;
 }
 .carea1-content-label{
-  float: right;
-  height: 50px;
-  width: 890px;
+  float: left;
+  padding: 5px;
+  width: 880px;
 }
 .clear{
   /*border: 1px solid #999999;*/
@@ -73,5 +74,5 @@ h1 {
 }
 
 #carea1 {
-    height: 815px;
+    height: 708px;
 }

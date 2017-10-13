@@ -3,14 +3,6 @@
  Create certificate templates for Ilias
 */ 
 
-var imported = document.createElement('script');
-//imported.src = 'jszip-v3.1.4-22/dist/jszip.js';
-//imported.src = 'dist/jszip.min.js';
-
-document.head.appendChild(imported);
-var carea1CheckedTitle = Array();
-var carea1CheckedCheckbox = Array();
-
 /* Titles of areas */
 var carea1Title = new Array();
 carea1Title = ['I Medientheorie und Mediengesellschaft',
@@ -22,13 +14,10 @@ carea1Title = ['I Medientheorie und Mediengesellschaft',
 /* Themas  */    
 var carea1Checkbox = new Array();                    
 carea1Checkbox =  [
-['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
-['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
-['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
-['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.'],
-['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.', 'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.', 'Thematisierung von Fragen des Kinder- und Jugendschutzes / Thematisierung von Chancen und Risiken der Mediennutzung.']
+['Thematisierung aktueller Zusammenhänge zwischen Medien und Gesellschaft, auch mit Blick auf die Bedeutung des Zugangs zu Informations- und Kommunikations-systemen für gesellschaftliche, wirtschaftliche und industrielle Belange.',  'Thematisierung der Mediensozialisation von Schülerinnen und Schülern sowie Möglichkeiten zur pädagogischen Impulssetzung im Sinne einer medienethischen Werterziehung und aktiver, demokratischer Teilhabe.',  'Thematisierung von Fragen des Kinder- und Jugendschutzes  Thematisierung von Chancen und Risiken der Mediennutzung.'], ['Thematisierung der didaktischen Funktion des Medieneinsatzes in Abstimmung mit Unterrichtsmethoden und -inhalten.', 'Thematisierung der Nutzung von Medien zur Unterstützung selbstgesteuerten, kooperativen und kreativen Lernens.', 'Thematisierung von Möglichkeiten unterrichtlicher Differenzierung durch Medien-einsatz.'], ['Einführung bzw. intensive Nutzung unterrichtsrelevanter Medien und Software. Spezifikation der Medien/Software:', 'Ein- bzw. Anleitung zur kritischen und ergebnisorientierten Recherche in Vorbereitung des Schul- oder Unterrichtsalltags.'],
+['Thematisierung von Möglichkeiten zur Initiierung von Medienprojekten im schulischen Kontext'],
+['Kritische Reflexion der eigenen Haltung in Bezug auf Mediennutzung, Mediengesellschaft und Medieneinsatz.', 'Reflexion der eigenen Medienbiographie im Hinblick auf Möglichkeiten,Schülerinnen und Schüler zu einer kompetenten Teilnahme zu motivieren und moralische Haltungen, ethische Werte und ästhetische Urteile zu fördern.', 'Auseinandersetzung mit Entwicklungen der Medienwelt, darauf aufbauend Thematisierung dieser Entwicklungen als Chance zur beruflichen und persönlichen Weiterentwicklung im Sinne einer zeitgemäßen Lehrerrolle sowie die Ableitung des eigenen Fortbildungsbedarf.']
 ];
-
 
 
 /* Create html element*/
@@ -42,10 +31,8 @@ function crElement(element, id, titel, text, type, cName) {
   }
   resElement.id = id;
   resElement.className = cName;
-
   return resElement;
 }
-
 
 /* Add checkboxses and labels*/
 function addCheckboxs(){   
@@ -55,10 +42,9 @@ function addCheckboxs(){
       div = crElement('div', 'carea1'+i+j, '', '', 'div', '');
       //Checkbox
       childCheckbox = crElement('input', 'checkbox'+ i+''+j, i, j, 'checkbox','carea1-content-checkbox');
-            
       //Label
       childLabel = crElement('label', '', '', carea1Checkbox[i][j], 'label', 'carea1-content-label');
-      // alert(tempElement.className);
+
       div.appendChild(childCheckbox);
       div.appendChild(childLabel);
       divNode.appendChild(div);
@@ -66,10 +52,6 @@ function addCheckboxs(){
     document.getElementById('carea1').appendChild(divNode);
   }
 }
-
-addCheckboxs();
-
-
 
 /* */
 function enumerationNode(text) {
@@ -82,20 +64,7 @@ function enumerationNode(text) {
     return res;
 }
 
-/* Check user chooses */
-function checkFields(){
-  var res = true;
-  return res;
-}
-
-/* Read content */
-function readFields(){
-  var res = "";
-  return res;
-}
-
-
-
+addCheckboxs();
 
 function exportToXML(filename) {
     var today = new Date();
@@ -126,8 +95,8 @@ function exportToXML(filename) {
     xmlFile += '<fo:block text-align="left" font-size="0.9em"> eingeschrieben an der Philipps-Universität Marburg</fo:block>'; //
     xmlFile += '</fo:block-container>'; // CONTAINER 1
     /********************************************************************************************************/
+    
     xmlFile += '</fo:block>';// BLOCK 2
-
     xmlFile += '<fo:block></fo:block>';
     xmlFile += '<fo:block></fo:block>';
     xmlFile += '<fo:block></fo:block>';
@@ -157,18 +126,6 @@ function exportToXML(filename) {
     // Replace user account characteristics
     xmlFile = xmlFile.replace(/\[DATE]/gi, today.toISOString().substring(0, 10));
     xmlFile = xmlFile.replace(/\[DATE_COMPLETED]/gi, today.toISOString().substring(0, 10));
-    /*
-    var usalutation = document.forms[0].usalutation.value;
-    var utitle = document.forms[0].utitle.value;
-    if (utitle == 'ut0') utitle = '';
-    if (usalutation == 'us0') usalutation = '';
-    */
-    /*
-    xmlFile = xmlFile.replace(/\[USER_SALUTATION]/gi, usalutation);
-    xmlFile = xmlFile.replace(/\[USER_TITLE]/gi, utitle);
-    if (document.forms[0].ufirst.value != '') xmlFile = xmlFile.replace(/\[USER_FIRSTNAME]/gi, ufirst = document.forms[0].ufirst.value);
-    if (document.forms[0].ulast.value != '') xmlFile = xmlFile.replace(/\[USER_LASTNAME]/gi, ufirst = document.forms[0].ulast.value);
-    */
 
     // Replace cours characteristics
     if (document.forms[0].ctitle.value != '') xmlFile = xmlFile.replace(/\[COURSE_TITLE]/gi, ufirst = document.forms[0].ctitle.value);
