@@ -158,7 +158,7 @@ function exportToXML(filename) {
     }
 
     if (courseArea1 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_1]/gi, courseArea1);
-    if (courseArea2 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_2]/gi, courseArea2);
+    if (courseArea2 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_2]/gi, '<fo:block>Sonstiges:' + courseArea2 + '</fo:block>');
 
     var bg_image = "resources/images/background.jpg";
     var zipfilename = today.toISOString().substring(0, 10) + "_" + today.getUTCMilliseconds() + "_course_certificate.zip";
