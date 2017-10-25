@@ -83,7 +83,8 @@ function exportToXML(filename) {
     xmlFile += '<fo:block-container position="absolute" top="5cm" left="9cm" height="4cm" width="8cm">'; // CONTAINER 2
     xmlFile += '<fo:block text-align="right" font-size="0.7em">Philipps-Universität Marburg</fo:block>'; //straße
     xmlFile += '<fo:block text-align="right" font-size="0.7em">35032 Marburg</fo:block>'; //straße
-    xmlFile += '<fo:block text-align="right" font-size="0.7em">[COURSE_OWNER]</fo:block>'; //E-Mail
+	xmlFile += '<fo:block text-align="right" font-size="0.7em">[DEPARTMENT]</fo:block>'; //Fachbereich
+    xmlFile += '<fo:block text-align="right" font-size="0.7em">[COURSE_OWNER_NAME]</fo:block>'; //E-Mail
     xmlFile += '<fo:block text-align="right" font-size="0.7em">[COURSE_OWNER_MAIL]</fo:block>'; //E-Mail
     xmlFile += '<fo:block text-align="right" font-size="0.7em">Marburg, den [DATE]</fo:block>'; //DATE
     xmlFile += '</fo:block-container>'; // CONTAINER 2
@@ -128,8 +129,11 @@ function exportToXML(filename) {
     xmlFile = xmlFile.replace(/\[DATE_COMPLETED]/gi, today.toISOString().substring(0, 10));
 
     // Replace cours characteristics
-    if (document.forms[0].ctitle.value != '') xmlFile = xmlFile.replace(/\[COURSE_TITLE]/gi, ufirst = document.forms[0].ctitle.value);
-    if (document.forms[0].ccontent.value != '') xmlFile = xmlFile.replace(/\[COURSE_DESC]/gi, ufirst = document.forms[0].ccontent.value);
+	if (document.forms[0].department.value != '') xmlFile = xmlFile.replace(/\[DEPARTMENT]/gi, document.forms[0].department.value);
+	if (document.forms[0].coname.value != '') xmlFile = xmlFile.replace(/\[COURSE_OWNER_NAME]/gi, document.forms[0].coname.value);
+	if (document.forms[0].comail.value != '') xmlFile = xmlFile.replace(/\[COURSE_OWNER_MAIL]/gi,  document.forms[0].comail.value);
+    if (document.forms[0].ctitle.value != '') xmlFile = xmlFile.replace(/\[COURSE_TITLE]/gi, document.forms[0].ctitle.value);
+    if (document.forms[0].ccontent.value != '') xmlFile = xmlFile.replace(/\[COURSE_DESC]/gi, document.forms[0].ccontent.value);
 
     // Course content
     var courseArea1 = '';
