@@ -120,7 +120,7 @@ function exportToXML(filename) {
 
     xmlFile += '<fo:block>[COURSE_OWNER_NAME]</fo:block>';
     xmlFile += '<fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block>';
-    xmlFile += '<fo:block text-align="left" font-size="0.7em" border-top="1px solid black">Dies ist ein automatisch generiertes Zertifikat. Es ist auch ohne Unterschrift gültig.</fo:block>';
+    xmlFile += '<fo:block text-align="left" font-size="0.7em" border-top="1px solid black">Dies ist eine automatisch generierte Bescheinigung, die auch ohne Unterschrift gültig ist.</fo:block>';
     xmlFile += '</fo:block></fo:block></fo:block></fo:flow> ';// BLOCK 1
     xmlFile += ' </fo:page-sequence></fo:root>';
 
