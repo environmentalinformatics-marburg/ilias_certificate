@@ -55,3 +55,31 @@ h1 {
   /*border: 1px solid #999999;*/
   color: #666;
 }
+#carea1 {
+  height: 708px;
+}
+
+#askUserSubmit{
+width:100px;
+}
+#askUser{
+position: absolute;
+background: #ffffff;
+top: 323px;
+border: 1px solid red;
+padding: 25px;
+width: 546px;
+margin-left: 170px;
+}
+#labelaskUser{
+width: 200px;
+
+}
+#askUser input{
+width:20px;
+height:15px;
+margin:0px;
+}
+#askUser0, #askUser1{
+margin-bottom:13px;
+}

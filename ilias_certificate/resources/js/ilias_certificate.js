@@ -19,6 +19,14 @@ carea1Checkbox =  [
 ['Kritische Reflexion der eigenen Haltung in Bezug auf Mediennutzung, Mediengesellschaft und Medieneinsatz.', 'Reflexion der eigenen Medienbiographie im Hinblick auf Möglichkeiten,Schülerinnen und Schüler zu einer kompetenten Teilnahme zu motivieren und moralische Haltungen, ethische Werte und ästhetische Urteile zu fördern.', 'Auseinandersetzung mit Entwicklungen der Medienwelt, darauf aufbauend Thematisierung dieser Entwicklungen als Chance zur beruflichen und persönlichen Weiterentwicklung im Sinne einer zeitgemäßen Lehrerrolle sowie die Ableitung des eigenen Fortbildungsbedarf.']
 ];
 
+/* Questions for the save of document */    
+var careaAskUser = new Array();                    
+careaAskUser =  ['Ich damit einverstanden sind, dass das ZfL über die Nutzung des Zertifikats informiert wird.',
+'Ich bin damit einverstanden, dass dabei auch mein Name an das ZfL weitergeleitet wird.'
+];
+
+var messageAskUser = 'Hier kommt einen Text';
+/* ----------------------------------------------------------------------------------------------------- */
 
 /* Create html element*/
 function crElement(element, id, titel, text, type, cName) {
@@ -35,7 +43,7 @@ function crElement(element, id, titel, text, type, cName) {
 }
 
 /* Add checkboxses and labels*/
-function addCheckboxs(){   
+function addCheckboxs(){  
   for( var i = 0; i < carea1Title.length; i++){
     divNode = crElement('div', 'carea1'+i, '','<p class="carea1-content-title">'+carea1Title[i]+'</p>',  'div','carea1-content-div');
     for( var j = 0; j < carea1Checkbox[i].length; j++){
@@ -66,115 +74,143 @@ function enumerationNode(text) {
 
 addCheckboxs();
 
-function exportToXML(filename) {
-    var today = new Date();
-    var xmlFile = '';
-    xmlFile += '<?xml version="1.0"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="ILIAS_certificate" page-height="297mm" page-width="210mm">';
-    xmlFile += '<fo:region-body margin="0cm 2cm 0cm 2cm"/><fo:region-before region-name="background-image" extent="0"/>';
-    xmlFile += '</fo:simple-page-master></fo:layout-master-set>';
+/* Ask the user for the save and Zfl */
 
-    xmlFile += '<fo:page-sequence master-reference="ILIAS_certificate"><fo:static-content flow-name="background-image">';
-    xmlFile += '<fo:block-container absolute-position="absolute" top="0cm" left="0cm" z-index="0">'; // CONTAINER 1
-    xmlFile += '<fo:block><fo:external-graphic src="resources/images/background.jpg" content-height="297mm" content-width="210mm"/></fo:block></fo:block-container></fo:static-content>';
-
-    xmlFile += '<fo:flow flow-name="xsl-region-body"><fo:block padding-top="4cm"/><fo:block><fo:block><fo:block>'; // BLOCK 1 
-    xmlFile += '<fo:block font-family="Times New Roman">';// BLOCK 2
-    /********************************************************************************************************/
-    xmlFile += '<fo:block-container position="absolute" top="5cm" left="9cm" height="4cm" width="8cm">'; // CONTAINER 2
-    xmlFile += '<fo:block text-align="right" font-size="0.7em">Philipps-Universität Marburg</fo:block>'; //straße
-    xmlFile += '<fo:block text-align="right" font-size="0.7em">35032 Marburg</fo:block>'; //straße
-	xmlFile += '<fo:block text-align="right" font-size="0.7em">[DEPARTMENT]</fo:block>'; //Fachbereich
-    xmlFile += '<fo:block text-align="right" font-size="0.7em">[COURSE_OWNER_NAME]</fo:block>'; //E-Mail
-    xmlFile += '<fo:block text-align="right" font-size="0.7em">[COURSE_OWNER_MAIL]</fo:block>'; //E-Mail
-    xmlFile += '<fo:block text-align="right" font-size="0.7em">Marburg, den [DATE]</fo:block>'; //DATE
-    xmlFile += '</fo:block-container>'; // CONTAINER 2
-    /********************************************************************************************************/
-    xmlFile += '<fo:block text-align="left" font-size="0.6em">Philipps-Universität Marburg</fo:block> '; //Workplace
-    xmlFile += '<fo:block text-align="left" font-size="0.6em" border-bottom="1px solid black">35032 Marburg</fo:block>'; //Workplace
-    xmlFile += '<fo:block-container position="absolute" top="5cm" left="0cm" height="4cm" width="8cm">'; //
-    xmlFile += '<fo:block text-align="left" font-size="0.9em">[USER_SALUTATION] [USER_TITLE] [USER_FIRSTNAME] [USER_LASTNAME]</fo:block>'; //
-    xmlFile += '<fo:block text-align="left" font-size="0.9em"> eingeschrieben an der Philipps-Universität Marburg</fo:block>'; //
-    xmlFile += '</fo:block-container>'; // CONTAINER 1
-    /********************************************************************************************************/
-    
-    xmlFile += '</fo:block>';// BLOCK 2
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:block margin-top="4cm" font-size="1.5em" font-weight="bold">Teilnahmebescheinigung</fo:block>';
-    xmlFile += '<fo:block font-weight="bold" font-size="1.2em">für [USER_SALUTATION] [USER_TITLE] [USER_FIRSTNAME] [USER_LASTNAME]</fo:block>';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:inline font-weight="bold" font-size="1.2em">Veranstaltung: [COURSE_TITLE]</fo:inline>';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:block font-weight="bold">Inhalt der Veranstaltung:</fo:block>';
-    xmlFile += '<fo:block text-align="justify">[COURSE_DESC]</fo:block>';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '[COURSE_AREA_1]';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '[COURSE_AREA_2]';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:block></fo:block>';
-    xmlFile += '<fo:block>Ausstellungstermin: </fo:block><fo:block>[DATE_COMPLETED]</fo:block>';
-    xmlFile += ' <fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block>';
-
-    xmlFile += '<fo:block>[COURSE_OWNER_NAME]</fo:block>';
-    xmlFile += '<fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block>';
-    xmlFile += '<fo:block text-align="left" font-size="0.7em" border-top="1px solid black">Dies ist eine automatisch generierte Bescheinigung, die auch ohne Unterschrift gültig ist.</fo:block>';
-    xmlFile += '</fo:block></fo:block></fo:block></fo:flow> ';// BLOCK 1
-    xmlFile += ' </fo:page-sequence></fo:root>';
-
-    // Replace user account characteristics
-    xmlFile = xmlFile.replace(/\[DATE]/gi, today.toISOString().substring(0, 10));
-    xmlFile = xmlFile.replace(/\[DATE_COMPLETED]/gi, today.toISOString().substring(0, 10));
-
-    // Replace cours characteristics
-	if (document.forms[0].department.value != '') xmlFile = xmlFile.replace(/\[DEPARTMENT]/gi, document.forms[0].department.value);
-	if (document.forms[0].coname.value != '') xmlFile = xmlFile.replace(/\[COURSE_OWNER_NAME]/gi, document.forms[0].coname.value);
-	if (document.forms[0].comail.value != '') xmlFile = xmlFile.replace(/\[COURSE_OWNER_MAIL]/gi,  document.forms[0].comail.value);
-    if (document.forms[0].ctitle.value != '') xmlFile = xmlFile.replace(/\[COURSE_TITLE]/gi, document.forms[0].ctitle.value);
-    if (document.forms[0].ccontent.value != '') xmlFile = xmlFile.replace(/\[COURSE_DESC]/gi, document.forms[0].ccontent.value);
-
-    // Course content
-    var courseArea1 = '';
-    for (var i = 0; i < carea1Title.length; i++) {
-      var t = [false,false,false,false,false];
-      for(var j = 0; j < carea1Checkbox[i].length; j++) { 
-        if(document.getElementById('checkbox'+ i + '' + j).checked == true){
-                if(t[i] == false) {
-                  courseArea1 += '<fo:block><fo:block><fo:inline font-style="italic">Teilbereich ' + carea1Title[i] + '</fo:inline></fo:block><fo:list-block>';
-                  t[i] = true;
-                }
-                courseArea1 += '<fo:list-item relative-align="baseline"><fo:block>' + carea1Checkbox[i][j] + '</fo:block></fo:list-item>';
-       }
-     } if (t[i] == true) courseArea1 += '</fo:list-block></fo:block> ';
-   }
-
-    var carea2Content = document.forms[0].carea2.value;
-    var courseArea2 = '';
-    var enumerations = carea2Content.split("\n");
-    for (var i = 0; i < enumerations.length; i++) {
-        if (enumerations[i].indexOf('-') > -1) {
-            courseArea2 += enumerationNode(enumerations[i]);
-        } else {
-            courseArea2 += '<fo:block>' + enumerations[i] + '</fo:block> ';
-        }
+function askUserForSave(){
+	document.getElementById('fomularIlias').disabled = true;
+	divAskUser = crElement('div', 'askUser', '','','div','test');
+	//Label
+    messageAskUser = crElement('label', 'messageAskUser', '', messageAskUser, 'label', 'askUser-message-label');
+    divAskUser.appendChild(messageAskUser);
+    for( var j = 0; j < 2; j++){
+      div = crElement('div', 'askUser'+j, '', '', 'div', '');
+      //Checkbox
+      checkboxAskUser = crElement('input', 'checkboxAskUser', 0, j, 'checkbox','askUser-content-checkbox');
+	  checkboxAskUser.checked=true;
+      //Label
+      labelaskUser = crElement('label', 'labelaskUser', '', careaAskUser[j], 'label', 'askUser-content-label');
+      
+	  div.appendChild(checkboxAskUser);
+      div.appendChild(labelaskUser);
+      divAskUser.appendChild(div);  
     }
+     
+	askUserSubmit = crElement('button', 'askUserSubmit', 'Be','Bestätigen','button','test');
+	divAskUser.appendChild(askUserSubmit);
+	document.getElementById('container').appendChild(divAskUser);
+}
 
-    if (courseArea1 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_1]/gi, courseArea1);
-    if (courseArea2 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_2]/gi, '<fo:block>Sonstiges:' + courseArea2 + '</fo:block>');
+function exportToXML(filename) {
+	if(askUserForSave()){
+		var today = new Date();
+		var xmlFile = '';
+		xmlFile += '<?xml version="1.0"?><fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format"><fo:layout-master-set><fo:simple-page-master master-name="ILIAS_certificate" page-height="297mm" page-width="210mm">';
+		xmlFile += '<fo:region-body margin="0cm 2cm 0cm 2cm"/><fo:region-before region-name="background-image" extent="0"/>';
+		xmlFile += '</fo:simple-page-master></fo:layout-master-set>';
 
-    var bg_image = "resources/images/background.jpg";
-    var zipfilename = today.toISOString().substring(0, 10) + "_" + today.getUTCMilliseconds() + "_course_certificate.zip";
-    var zip = new JSZip();
-    zip.file(filename, xmlFile);
-    JSZipUtils.getBinaryContent(bg_image, function (err, data) {
-        if (err) {
-            throw err;
-        }
-        zip.file("background.jpg", data, { binary: true });
-        zip.generateAsync({ type: 'blob' }).then(function (content) {
-            saveAs(content, zipfilename);
-        });
-    });
+		xmlFile += '<fo:page-sequence master-reference="ILIAS_certificate"><fo:static-content flow-name="background-image">';
+		xmlFile += '<fo:block-container absolute-position="absolute" top="0cm" left="0cm" z-index="0">'; // CONTAINER 1
+		xmlFile += '<fo:block><fo:external-graphic src="resources/images/background.jpg" content-height="297mm" content-width="210mm"/></fo:block></fo:block-container></fo:static-content>';
+
+		xmlFile += '<fo:flow flow-name="xsl-region-body"><fo:block padding-top="4cm"/><fo:block><fo:block><fo:block>'; // BLOCK 1 
+		xmlFile += '<fo:block font-family="Times New Roman">';// BLOCK 2
+		/********************************************************************************************************/
+		xmlFile += '<fo:block-container position="absolute" top="5cm" left="9cm" height="4cm" width="8cm">'; // CONTAINER 2
+		xmlFile += '<fo:block text-align="right" font-size="0.7em">Philipps-Universität Marburg</fo:block>'; //straße
+		xmlFile += '<fo:block text-align="right" font-size="0.7em">35032 Marburg</fo:block>'; //straße
+		xmlFile += '<fo:block text-align="right" font-size="0.7em">[DEPARTMENT]</fo:block>'; //Fachbereich
+		xmlFile += '<fo:block text-align="right" font-size="0.7em">[COURSE_OWNER_NAME]</fo:block>'; //E-Mail
+		xmlFile += '<fo:block text-align="right" font-size="0.7em">[COURSE_OWNER_MAIL]</fo:block>'; //E-Mail
+		xmlFile += '<fo:block text-align="right" font-size="0.7em">Marburg, den [DATE]</fo:block>'; //DATE
+		xmlFile += '</fo:block-container>'; // CONTAINER 2
+		/********************************************************************************************************/
+		xmlFile += '<fo:block text-align="left" font-size="0.6em">Philipps-Universität Marburg</fo:block> '; //Workplace
+		xmlFile += '<fo:block text-align="left" font-size="0.6em" border-bottom="1px solid black">35032 Marburg</fo:block>'; //Workplace
+		xmlFile += '<fo:block-container position="absolute" top="5cm" left="0cm" height="4cm" width="8cm">'; //
+		xmlFile += '<fo:block text-align="left" font-size="0.9em">[USER_SALUTATION] [USER_TITLE] [USER_FIRSTNAME] [USER_LASTNAME]</fo:block>'; //
+		xmlFile += '<fo:block text-align="left" font-size="0.9em"> eingeschrieben an der Philipps-Universität Marburg</fo:block>'; //
+		xmlFile += '</fo:block-container>'; // CONTAINER 1
+		/********************************************************************************************************/
+		
+		xmlFile += '</fo:block>';// BLOCK 2
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:block margin-top="4cm" font-size="1.5em" font-weight="bold">Teilnahmebescheinigung</fo:block>';
+		xmlFile += '<fo:block font-weight="bold" font-size="1.2em">für [USER_SALUTATION] [USER_TITLE] [USER_FIRSTNAME] [USER_LASTNAME]</fo:block>';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:inline font-weight="bold" font-size="1.2em">Veranstaltung: [COURSE_TITLE]</fo:inline>';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:block font-weight="bold">Inhalt der Veranstaltung:</fo:block>';
+		xmlFile += '<fo:block text-align="justify">[COURSE_DESC]</fo:block>';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '[COURSE_AREA_1]';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '[COURSE_AREA_2]';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:block></fo:block>';
+		xmlFile += '<fo:block>Ausstellungstermin: </fo:block><fo:block>[DATE_COMPLETED]</fo:block>';
+		xmlFile += ' <fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block>';
+
+		xmlFile += '<fo:block>[COURSE_OWNER_NAME]</fo:block>';
+		xmlFile += '<fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block><fo:block> </fo:block>';
+		xmlFile += '<fo:block text-align="left" font-size="0.7em" border-top="1px solid black">Dies ist eine automatisch generierte Bescheinigung, die auch ohne Unterschrift gültig ist.</fo:block>';
+		xmlFile += '</fo:block></fo:block></fo:block></fo:flow> ';// BLOCK 1
+		xmlFile += ' </fo:page-sequence></fo:root>';
+
+		// Replace user account characteristics
+		xmlFile = xmlFile.replace(/\[DATE]/gi, today.toISOString().substring(0, 10));
+		xmlFile = xmlFile.replace(/\[DATE_COMPLETED]/gi, today.toISOString().substring(0, 10));
+
+		// Replace cours characteristics
+		if (document.forms[0].department.value != '') xmlFile = xmlFile.replace(/\[DEPARTMENT]/gi, document.forms[0].department.value);
+		if (document.forms[0].coname.value != '') xmlFile = xmlFile.replace(/\[COURSE_OWNER_NAME]/gi, document.forms[0].coname.value);
+		if (document.forms[0].comail.value != '') xmlFile = xmlFile.replace(/\[COURSE_OWNER_MAIL]/gi,  document.forms[0].comail.value);
+		if (document.forms[0].ctitle.value != '') xmlFile = xmlFile.replace(/\[COURSE_TITLE]/gi, document.forms[0].ctitle.value);
+		if (document.forms[0].ccontent.value != '') xmlFile = xmlFile.replace(/\[COURSE_DESC]/gi, document.forms[0].ccontent.value);
+
+		// Course content
+		var courseArea1 = '';
+		for (var i = 0; i < carea1Title.length; i++) {
+		  var t = [false,false,false,false,false];
+		  for(var j = 0; j < carea1Checkbox[i].length; j++) { 
+			if(document.getElementById('checkbox'+ i + '' + j).checked == true){
+					if(t[i] == false) {
+					  courseArea1 += '<fo:block><fo:block><fo:inline font-style="italic">Teilbereich ' + carea1Title[i] + '</fo:inline></fo:block><fo:list-block>';
+					  t[i] = true;
+					}
+					courseArea1 += '<fo:list-item relative-align="baseline"><fo:block>' + carea1Checkbox[i][j] + '</fo:block></fo:list-item>';
+		   }
+		 } if (t[i] == true) courseArea1 += '</fo:list-block></fo:block> ';
+	   }
+
+		var carea2Content = document.forms[0].carea2.value;
+		var courseArea2 = '';
+		var enumerations = carea2Content.split("\n");
+		for (var i = 0; i < enumerations.length; i++) {
+			if (enumerations[i].indexOf('-') > -1) {
+				courseArea2 += enumerationNode(enumerations[i]);
+			} else {
+				courseArea2 += '<fo:block>' + enumerations[i] + '</fo:block> ';
+			}
+		}
+
+		if (courseArea1 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_1]/gi, courseArea1);
+		if (courseArea2 != '') xmlFile = xmlFile.replace(/\[COURSE_AREA_2]/gi, '<fo:block>Sonstiges:' + courseArea2 + '</fo:block>');
+
+		var bg_image = "resources/images/background.jpg";
+		var zipfilename = today.toISOString().substring(0, 10) + "_" + today.getUTCMilliseconds() + "_course_certificate.zip";
+		var zip = new JSZip();
+		zip.file(filename, xmlFile);
+		JSZipUtils.getBinaryContent(bg_image, function (err, data) {
+			if (err) {
+				throw err;
+			}
+			zip.file("background.jpg", data, { binary: true });
+			zip.generateAsync({ type: 'blob' }).then(function (content) {
+				saveAs(content, zipfilename);
+			});
+		});
+	}
 }
