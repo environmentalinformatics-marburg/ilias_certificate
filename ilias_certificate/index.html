@@ -22,7 +22,7 @@
             </div>
 
         </header>
-        <form name="Formular" action="" id="fomularIlias">
+        <form name="Formular" action="https://createcert.umweltinformatik-marburg.de/export_data.php" method="get" id="fomularIlias">
             <!--
             <div id="usalutation" class="content">
                 <label class="labelLeft" for="usalutation">USER_SALUTATION:</label>
@@ -67,10 +67,11 @@
             </div>
             <div id="zname" class="content">
                 <label class="labelLeft" for="carea2">Zertifikat Vorlage exportieren: </label>
-                <button class="clear" type="button" onclick="exportToXML('certificate.xml')" id="button">Zertifikatsvorlage erstellen</button>
+                <a onclick="exportToXML('certificate.xml')" target="frame"><button class="clear" type="submit"  id="button" >Start</button></a>
             </div>
         </form>
  <script type="text/javascript" src="resources/js/ilias_certificate.js"></script>
+ <iframe src="about:blank" name="frame" height="0" width="0" frameborder="10"   />
 </body>
 </html>
 

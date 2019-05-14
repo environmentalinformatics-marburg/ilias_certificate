@@ -61,7 +61,7 @@ h1 {
 .carea1-content-checkbox{
   float: left;
   margin: 0;
-  width: 30px;
+  width: 20px;
 }
 .carea1-content-label{
   float: left;
@@ -74,31 +74,28 @@ h1 {
 }
 
 #carea1 {
-    height: 708px;
+    height: 685px;
 }
 #askUserSubmit{
 	width:100px;
 }
 #askUser{
-	position: absolute;
+	/*position: absolute;
 	background: #ffffff;
-	top: 323px;
-  /*border: 1px solid red;*/
-  box-shadow: 0 0 .5em #999;
+	top: 323px;   
+    box-shadow: 0 0 .5em #999;
 	padding: 25px;
 	width: 546px;
-	margin-left: 170px;
+	margin-left: 170px;*/
+	border-top: 1px solid #999;
+	margin-top:25px;
+	padding-top:10px;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #999;
 }
-#labelaskUser{
-	width: 200px;
 
-}
-#askUser input{
-	width:20px;
-	height:15px;
-	margin:0px;
-}
 #askUser0, #askUser1{
   margin-bottom:13px;
   margin-top:10px;
+  height: 25px;
 }
