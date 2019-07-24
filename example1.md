@@ -80,7 +80,7 @@ Was sind die wichtigsten Aussagen?
 ---
 Weitere Informationen finden Sie…
 
-  * in dem Abschnitt zur [elektromagnetischen Strahlung] (http://missionscience.nasa.gov/ems/01_intro.html) und zu den [Welleneigenschaften] (http://missionscience.nasa.gov/ems/02_anatomy.html) sowie
+  * in dem Abschnitt zur [elektromagnetischen Strahlung](http://missionscience.nasa.gov/ems/01_intro.html) und zu den [Welleneigenschaften] (http://missionscience.nasa.gov/ems/02_anatomy.html) sowie
   * im Abschnitt zum [sichtbaren Licht] (http://missionscience.nasa.gov/ems/09_visiblelight.html), [nahen Infrarot] (http://missionscience.nasa.gov/ems/08_nearinfraredwaves.html), [thermalem Infrarot] (http://missionscience.nasa.gov/ems/07_infraredwaves.html) und [Mikrowellenbereich] (http://missionscience.nasa.gov/ems/06_microwaves.html)
 
 auf den Seiten des [NASA Science Mission Directorate] (http://missionscience.nasa.gov/).
