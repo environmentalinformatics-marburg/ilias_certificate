@@ -46,7 +46,7 @@ The functions below will provide you some basic support to deal with the inconve
 
 Please use the simple functin ''createMocFolders'' to create a consistent folder structure.
 
-
+:![ Download createMocFolders.R](media/createMocFolders.R>)
 # rs-ws-05-1
 
 #' @description  MOC - Advanced GIS (T. Nauss, C. Reudenbach)
@@ -234,6 +234,7 @@ createMocFolders<- function(filepath_git,csess=15,ccourse="gi", moc=TRUE) {
     }
 }
 
+`</file>`
 
 ## Function getSessionPathes.R
 
@@ -245,7 +246,7 @@ The most easiest however the most ugliest way to assign a global variable out of
 The better way is to use the ''assign'' function. the below script is providing two presets. One is providing the course folder and variable structure the other is generating a simple but effective project structure. Feel free to adapt and improve the below script.
 
 
-`<file rsplus setPathGlobal.R>`
+:![ Download createMocFolders.R](media/setPathGlobal.R>)
 # rs-ws-05-1
 
 #' @description  MOC - Advanced GIS (T. Nauss, C. Reudenbach)
@@ -415,13 +416,14 @@ makGlobalVar <- function(name,value) {
     warning(paste0("The variable '", name,"' already exist in .GlobalEnv"))
     }
 }
-
+`</file>`
 
 ## Function sagaModuleHelp
 
 The function ''sagaModuleHelp'' returns the command line help for the addressed module and/or algorithm.
 
 
+:![ Download createMocFolders.R](media/sagaModuleHelp.R>)
 #' sagaModuleHelp
 
 #'@description gi-ws-04-1 MOC - Advanced GIS (T. Nauss, C. Reudenbach)
@@ -450,7 +452,7 @@ sagaModuleHelp<- function(module,algorithm=NULL) {
     return(info)
 }
 
-
+`</file>`
 
 For example if you want to know how to integrate the ''io_gdal'' module you can do this from R by using the '' sagaModuleHelp'' function as follows.
 
@@ -510,7 +512,7 @@ For example if you want to know how to integrate the ''io_gdal'' module you can 
 
 The function ''sagaModuleCmd'' returns the raw command line for the addressed module and/or algorithm.
 
-`<file rsplus sagaModuleCmd.R>`
+:![ Download createMocFolders.R](media/sagaModuleCmd.R>)
 #' sagaModuleCmd
 
 #'@description gi-ws-04-1 MOC - Advanced GIS (T. Nauss, C. Reudenbach)
@@ -541,6 +543,7 @@ sagaModuleCmd<- function(module,algorithm) {
     return(cmd)
 }
 
+`</file>`
 For example if you need the raw command line call for the ''io_gdal 0'' algorithm you can do this from R by using the '' sagaModuleCmd'' function as follows.
 
 	
