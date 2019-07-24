@@ -80,10 +80,10 @@ Was sind die wichtigsten Aussagen?
 ---
 Weitere Informationen finden Sie…
 
-  * in dem Abschnitt zur [elektromagnetischen Strahlung](http://missionscience.nasa.gov/ems/01_intro.html) und zu den [Welleneigenschaften] (http://missionscience.nasa.gov/ems/02_anatomy.html) sowie
-  * im Abschnitt zum [sichtbaren Licht] (http://missionscience.nasa.gov/ems/09_visiblelight.html), [nahen Infrarot] (http://missionscience.nasa.gov/ems/08_nearinfraredwaves.html), [thermalem Infrarot] (http://missionscience.nasa.gov/ems/07_infraredwaves.html) und [Mikrowellenbereich] (http://missionscience.nasa.gov/ems/06_microwaves.html)
+  * in dem Abschnitt zur [elektromagnetischen Strahlung](http://missionscience.nasa.gov/ems/01_intro.html) und zu den [Welleneigenschaften](http://missionscience.nasa.gov/ems/02_anatomy.html) sowie
+  * im Abschnitt zum [sichtbaren Licht](http://missionscience.nasa.gov/ems/09_visiblelight.html), [nahen Infrarot](http://missionscience.nasa.gov/ems/08_nearinfraredwaves.html), [thermalem Infrarot](http://missionscience.nasa.gov/ems/07_infraredwaves.html) und [Mikrowellenbereich](http://missionscience.nasa.gov/ems/06_microwaves.html)
 
-auf den Seiten des [NASA Science Mission Directorate] (http://missionscience.nasa.gov/).
+auf den Seiten des [NASA Science Mission Directorate](http://missionscience.nasa.gov/).
 ---
 
 
@@ -213,6 +213,6 @@ Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle glei
 
 **Weitere Informationen finden Sie…
 **
-  * …im Abschnitt zur [räumlichen Auflösung] (http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407) des [Tutoriums von Natural Resources Canada] (http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309).
+  * …im Abschnitt zur [räumlichen Auflösung](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407) des [Tutoriums von Natural Resources Canada](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309).
 ---
 
