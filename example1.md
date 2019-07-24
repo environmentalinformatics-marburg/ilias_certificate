@@ -211,7 +211,6 @@ Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle glei
 
 ---
 
-**Weitere Informationen finden Sie…
 **
   * …im Abschnitt zur [räumlichen Auflösung](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407) des [Tutoriums von Natural Resources Canada](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309).
 ---
