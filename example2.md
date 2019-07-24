@@ -46,7 +46,7 @@ The functions below will provide you some basic support to deal with the inconve
 
 Please use the simple functin ''createMocFolders'' to create a consistent folder structure.
 
-`<file rsplus createMocFolders.R>`
+<file>
 # rs-ws-05-1
 
 #' @description  MOC - Advanced GIS (T. Nauss, C. Reudenbach)
