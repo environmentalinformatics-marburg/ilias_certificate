@@ -46,7 +46,7 @@ The functions below will provide you some basic support to deal with the inconve
 
 Please use the simple functin ''createMocFolders'' to create a consistent folder structure.
 
-<file>
+
 # rs-ws-05-1
 
 #' @description  MOC - Advanced GIS (T. Nauss, C. Reudenbach)
@@ -234,7 +234,6 @@ createMocFolders<- function(filepath_git,csess=15,ccourse="gi", moc=TRUE) {
     }
 }
 
-`</file>`
 
 ## Function getSessionPathes.R
 
@@ -416,14 +415,13 @@ makGlobalVar <- function(name,value) {
     warning(paste0("The variable '", name,"' already exist in .GlobalEnv"))
     }
 }
-`</file>`
+
 
 ## Function sagaModuleHelp
 
 The function ''sagaModuleHelp'' returns the command line help for the addressed module and/or algorithm.
 
 
-`<file rsplus sagaModuleHelp.R>`
 #' sagaModuleHelp
 
 #'@description gi-ws-04-1 MOC - Advanced GIS (T. Nauss, C. Reudenbach)
@@ -452,7 +450,7 @@ sagaModuleHelp<- function(module,algorithm=NULL) {
     return(info)
 }
 
-`</file>`
+
 
 For example if you want to know how to integrate the ''io_gdal'' module you can do this from R by using the '' sagaModuleHelp'' function as follows.
 
@@ -543,7 +541,6 @@ sagaModuleCmd<- function(module,algorithm) {
     return(cmd)
 }
 
-`</file>`
 For example if you need the raw command line call for the ''io_gdal 0'' algorithm you can do this from R by using the '' sagaModuleCmd'' function as follows.
 
 	
