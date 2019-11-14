@@ -13,14 +13,14 @@ Anders gesagt stellen wir die folgenden Fragen:
 
 ### Lernziele
 
----
+`<note important>`
 
 **Wenn Sie aufpassen, dann können Sie am Ende…**
 
       * …den Strahlungspfad zwischen Strahlungsquelle und Sensor erkläutern.
-      *  …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
+      * …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
       * …die Konsequenzen der Beobachtungsgeometrie auf die räumliche Auflösung erklären.
----
+`</note>`
 
 ## Eigenschaften der Strahlungsquelle
 
@@ -39,7 +39,9 @@ Das Gesetz ist in der nachfolgenden Abbildung illustriert. Das Maximum der Strah
 
 Das Maximum der solaren Strahlung (Oberflächentemperatur der Sonne ca. 6.000 K) liegt demzufolge bei einer Wellenlänge von ca. 0,5 µm, also im Zentrum des sichtbaren Spektralbereichs. Das Maximum für einen Körper von ca. 3.000 K bei etwa 0,7 µm. Die Kurve für 300 K kann näherungsweise für die Abstrahlung der Erde dienen (eigentlich eher 255 K). Das Maximum der von der Erde abgestrahlten Energie ist demnach bei ca. 10 µm zu finden. Es fällt zudem auf, dass die kälteren Körper erst ab einer gewissen Wellenlänge eine nennenswerte Strahlung emittieren.
 
-!["http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png" title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" ](//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png)
+`<html>`
+
+`<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png">``<img width="512" alt="Planck law log log scale" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"/>``</a>``</html>`
 
 *Abbildung 05-01: Emittierte Strahlung als Funktion der Oberflächentemperatur und Wellenlänge (public domain, via Wikimedia Commons*)
 
@@ -51,44 +53,41 @@ Die von der Sonne emittierte Strahlung verteilt sich auf dem Weg zur Erde auf ei
 
 Wir können also aufgrund des Wien’schen Verschiebungsgesetzes und der Abnahme der Bestrahlungsstärke mit dem Quadrat der Entfernung begründen, warum wir die für die passive Fernerkundung der Landoberfläche und Atmosphäre relevante Strahlung in
 
-      * einen solaren Anteil (< 4 µm) und einen
-      * terrestrichen Anteil (> 3,5 µm)
+* einen solaren Anteil (< 4 µm) und einen
+* terrestrichen Anteil (> 3,5 µm)
 
 aufteilen können.
 
-Nur nebenbei: Die ebenfalls aus der Abbildung für das Wien’sche Verschiebungsgesetz hervorgehende Eigenschaft, dass warme Körper offenbar mehr Energie emittieren als kalte Körper, wird durch das Stefan-Boltzmann-Gesetz beschrieben. Es besagt, dass die Strahlungsemission eines Körpers mit einer Temperatur größer 0 K eine Funktion der vierten Potenz der Temperatur ist. Also: Je wärmer der Körper ist, umso mehr Energie wird emittiert. Das ist der Grund dafür, dass man fernerkundlich die Temperatur von Objekten bestimmen kann (vgl. [Beispiel der letzten Sitzung](courses/bsc/methoden-geoinformatik/lecture-notes/mg-ln-04#spektrale_eigenschaften_die_informationsgrundlage_der_fernerkundung)).
+Nur nebenbei: Die ebenfalls aus der Abbildung für das Wien’sche Verschiebungsgesetz hervorgehende Eigenschaft, dass warme Körper offenbar mehr Energie emittieren als kalte Körper, wird durch das Stefan-Boltzmann-Gesetz beschrieben. Es besagt, dass die Strahlungsemission eines Körpers mit einer Temperatur größer 0 K eine Funktion der vierten Potenz der Temperatur ist. Also: Je wärmer der Körper ist, umso mehr Energie wird emittiert. Das ist der Grund dafür, dass man fernerkundlich die Temperatur von Objekten bestimmen kann (vgl. [[courses:bsc:methoden-geoinformatik:lecture-notes:mg-ln-04#spektrale_eigenschaften_die_informationsgrundlage_der_fernerkundung|Beispiel der letzten Sitzung]]).
 
-### Spektrale Eigenschaften von Objekten
+###  Spektrale Eigenschaften von Objekten
 
 
 Die Ausführungen auf dieser Seite haben Sie fit gemacht, auch einmal einen anderen Text zu lesen.
 
-Studieren Sie jetzt das [Kapitel 2.1 des Eumetrain-Workshops](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.1.0) zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
+Studieren Sie jetzt das [[http://www.eumetrain.org/data/3/36/navmenu.php?page=2.1.0|Kapitel 2.1 des Eumetrain-Workshops]] zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
 
 Kommen Sie anschließend wieder auf diese Seite zurück.
 
 Was sind die wichtigsten Aussagen?
 
-
-*  Das Planck-Gesetz ist die Mutter aller Strahlungsgesetze.
-
-*  Das Wien’sche Verschiebungsgesetz und auch das Stefan-Boltzmann-Gesetz sind Ableitungen aus dem Planck-Gesetz (zugegeben, dass stand eher zwischen den Zeilen, aber lesen Sie nochmal die erste Seite des dortigen Kapitels unter diesem Aspekt).
-
-*  Die zweite Seite war eine Übung, die Sie anhand der Darstellungen oben zum Wien’schen Verschiebungsgesetzt locker beantworten können und der letzte Abschnitt war eine Zusammenfassung über Teile der letzten Sitzung.
+* Das Planck-Gesetz ist die Mutter aller Strahlungsgesetze.
+* Das Wien’sche Verschiebungsgesetz und auch das Stefan-Boltzmann-Gesetz sind Ableitungen aus dem Planck-Gesetz (zugegeben, dass stand eher zwischen den Zeilen, aber lesen Sie nochmal die erste Seite des dortigen Kapitels unter diesem Aspekt).
+* Die zweite Seite war eine Übung, die Sie anhand der Darstellungen oben zum Wien’schen Verschiebungsgesetzt locker beantworten können und der letzte Abschnitt war eine Zusammenfassung über Teile der letzten Sitzung.
 
 
----
+`<note>`
 Weitere Informationen finden Sie…
 
-  * in dem Abschnitt zur [elektromagnetischen Strahlung](http://missionscience.nasa.gov/ems/01_intro.html) und zu den [Welleneigenschaften](http://missionscience.nasa.gov/ems/02_anatomy.html) sowie
-  * im Abschnitt zum [sichtbaren Licht](http://missionscience.nasa.gov/ems/09_visiblelight.html), [nahen Infrarot](http://missionscience.nasa.gov/ems/08_nearinfraredwaves.html), [thermalem Infrarot](http://missionscience.nasa.gov/ems/07_infraredwaves.html) und [Mikrowellenbereich](http://missionscience.nasa.gov/ems/06_microwaves.html)
+* in dem Abschnitt zur [[http://missionscience.nasa.gov/ems/01_intro.html|elektromagnetischen Strahlung]] und zu den [[http://missionscience.nasa.gov/ems/02_anatomy.html|Welleneigenschaften]] sowie
+* im Abschnitt zum [[http://missionscience.nasa.gov/ems/09_visiblelight.html|sichtbaren Licht]], [[http://missionscience.nasa.gov/ems/08_nearinfraredwaves.html|nahen Infrarot]], [[http://missionscience.nasa.gov/ems/07_infraredwaves.html|thermalem Infrarot]] und [[http://missionscience.nasa.gov/ems/06_microwaves.html|Mikrowellenbereich]]
 
-auf den Seiten des [NASA Science Mission Directorate](http://missionscience.nasa.gov/).
----
+auf den Seiten des [[http://missionscience.nasa.gov/|NASA Science Mission Directorate]].
+`</note>`
 
 
 
-## Strahlungspfad
+=====Strahlungspfad=====
 
 
 Die Strahlung legt auf Ihrem Weg zwischen der Strahlungsquelle und dem Fernerkundungssensor meistens eine ziemlich weite Strecke zurück. Auf diesem Weg interagiert die Strahlung mit allen Objekten, die auf Ihrem Weg liegen oder Ihren Weg kreuzen.
@@ -96,34 +95,31 @@ Die Strahlung legt auf Ihrem Weg zwischen der Strahlungsquelle und dem Fernerkun
 
 Das folgende Beispiel zeigt den Strahlungspfad und mögliche Interaktionen am Beispiel der Fernerkundung im Bereich der solaren und terrestrischen Strahlung. Für das Beispiel nehmen wir an, dass der Sensor gerade die Fläche des Sees “beobachtet”.
 
-!["https://farm3.staticflickr.com/2904/14161592595_0f5d08d003_o.jpg"  title="05-02 by Environmental Informatics Marburg, on Flickr"](https://farm3.staticflickr.com/2904/14161592595_0f5d08d003_o.jpg)
+`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/14161592595" title="05-02 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm3.staticflickr.com/2904/14161592595_0f5d08d003_o.jpg" width="2815" height="1972" alt="05-02">``</a>``</html>`
 
 *Abbildung 05-02: Strahlungspfade in der optischen Fernerkundung (lehrewelt.de)*
 
 
-### Optische Fernerkundung im solaren Spektralbereich
+### Optische Fernerkundung im solarenSpektralbereich====
 
 Betrachten Sie zunächst die durchgezogenen blauen Pfeile auf der linken Seite:
 
+* Auf dem Strahlungspfad zwischen Sonne, Seeoberfläche und Sensor wird die Strahlung an der Wasseroberfläche (bzw. im oberen Bereich des Wasserkörpers) teilweise reflektiert. Hierdurch werden die spektralen Eigenschaften des Sonnenlichts entsprechend den Reflexionseigenschaften der Wasseroberfläche verändert (blaue Lichtanteile werden im Wasser i. d. R. stärker reflektiert als rote und v. a. nahe Infrarote – deshalb erscheint Wasser i. d. R. blau). Das ist eigentlich genau das was wir brauchen, den wir wollen ja in diesem Beispiel die Eigenschaften des Sees untersuchen und die Strahlung ist unser Informationsträger.
 
-*  Auf dem Strahlungspfad zwischen Sonne, Seeoberfläche und Sensor wird die Strahlung an der Wasseroberfläche (bzw. im oberen Bereich des Wasserkörpers) teilweise reflektiert. Hierdurch werden die spektralen Eigenschaften des Sonnenlichts entsprechend den Reflexionseigenschaften der Wasseroberfläche verändert (blaue Lichtanteile werden im Wasser i. d. R. stärker reflektiert als rote und v. a. nahe Infrarote – deshalb erscheint Wasser i. d. R. blau). Das ist eigentlich genau das was wir brauchen, den wir wollen ja in diesem Beispiel die Eigenschaften des Sees untersuchen und die Strahlung ist unser Informationsträger.
+* Auf dem Strahlungspfad zwischen Sonne, Seeoberfläche und Sensor muss die Strahlung aber auch zwei Mal die Atmosphäre passieren. Dabei kommt es zu multiplen Streuungen an den darin enthaltenen Partikeln, so dass das Strahlungssignal zum einen geschwächt wird und zum anderen durch die Streuung spektral verändert wird (Stichworte: Mie-Streuung, Rayleigh-Streuung etc.).
 
-
-*  Auf dem Strahlungspfad zwischen Sonne, Seeoberfläche und Sensor muss die Strahlung aber auch zwei Mal die Atmosphäre passieren. Dabei kommt es zu multiplen Streuungen an den darin enthaltenen Partikeln, so dass das Strahlungssignal zum einen geschwächt wird und zum anderen durch die Streuung spektral verändert wird (Stichworte: Mie-Streuung, Rayleigh-Streuung etc.).
-
-
-*  Auf dem Strahlungspfad zwischen Sonne und Seeoberfläche kommt es ebenfalls zu Reflexionen in der Atmosphäre, so dass Teile der Strahlung die Seeoberfläche erst gar nicht erreichen und “reine” Atmosphärensignale zurück zum Sensor transportieren.
+* Auf dem Strahlungspfad zwischen Sonne und Seeoberfläche kommt es ebenfalls zu Reflexionen in der Atmosphäre, so dass Teile der Strahlung die Seeoberfläche erst gar nicht erreichen und “reine” Atmosphärensignale zurück zum Sensor transportieren.
 
 Die zusätzlichen Interaktionen entlang des Strahlungspfads führen also dazu, dass das Sensorsignal nicht nur von den spektralen Eigenschaften des Sees bestimmt wird, sondern auch von den atmosphärischen Eigenschaften beeinflusst wird. Der Strahlungsgang kann zudem verkompliziert werden, wenn die Strahlung – wie im rechten Bildteil zwischen Wolke und Erdoberfläche angedeutet – mehrmals hin und her gestreut/reflektiert wird.
 
 Die Atmosphäre stellt also quasi ein Störsignal für die Landfernerkundung dar, weshalb v. a. für quantitative Angaben (z. B. Oberflächentemperaturen) oder für zeitlich wiederholte Untersuchungen (z. B. Vitalität der Vegetation) eine Atmosphärenkorrektur vor der eigentlichen Auswertung des Fernerkundungsdatensatzes erfolgen muss. Umgekehrt, wenn uns z. B. Wolken interessieren, dann ist das Landoberflächensignal das “Störsignal”, das korrigiert werden muss.
 
-### Optische Fernerkundung im terrestrischen Spektralbereich
+###  Optische Fernerkundung im terrestrischen Spektralbereich
 
 
 Das gerade gesagte trifft auch auf den mit gestrichelten Linien dargestellten terrestrischen Strahlungsbereich zu. Nur das hier in der Atmosphäre v. a. Absorptions- und Emissionsprozesse eine Rolle spielen, die die von der Landoberfläche emittierte Strahlung entweder abschwächen (Absorption) oder verstärken (Emission).
 
-## Strahlungsinteraktion in der Atmosphäre
+##  Strahlungsinteraktion in der Atmosphäre
 
 
 Beim Weg der solaren oder terrestrischen Strahlung durch die Erdatmosphäre kommt es also zu zahlreichen Strahlungsinteraktionen zwischen atmosphärischen Bestandteilen (Gase, Aerosole, Wassertropfen). Die Interaktionen im solaren Bereich werden von der Streuung und Reflexion dominiert. Im terrestrischen Bereich spielt die Absorption und Emission eine wichtige Rolle (Stichwort: Treibhauseffekt).
@@ -134,70 +130,64 @@ Im Bereich des sichtbaren Lichts ist die atmosphärische Extinktion gering und d
 
 Im Bereich um 10 µm ist die Atmosphäre wieder weitgehend durchlässig. Dieser Bereich fällt mit dem Maximum der terrestrischen Strahlung zusammen, was eine fernerkundliche Messung der Oberflächentemperatur deutlich erleichtert.
 
-!["http://commons.wikimedia.org/wiki/File%3AAtmospheric_electromagnetic_opacity.svg" title="By NASA (original); SVG by Mysid. [Public domain], via Wikimedia Commons" ](//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric_electromagnetic_opacity.svg/512px-Atmospheric_electromagnetic_opacity.svg.png)
+`<html>``<a title="By NASA (original); SVG by Mysid. [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AAtmospheric_electromagnetic_opacity.svg">``<img width="1024" alt="Atmospheric electromagnetic opacity" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric_electromagnetic_opacity.svg/512px-Atmospheric_electromagnetic_opacity.svg.png"/>``</a>``</html>`
 *Abbildung 05-03: Atmosphärische Banden und Fenster (NASA, public domain, via Wikimedia Commons)*
 
-## Spektrale Eigenschaften und Winkelabhängigkeit
+## Spektrale Eigenschaften undWinkelabhängigkeit=====
 
 Neben den Eigenschaften des beobachteten Objekts und den Eigenschaften der Atmosphäre hat auch die Beobachtungsgeometrie einen Einfluss auf das gemessene Strahlungssignal. Unter Beobachtungsgeometrie versteht man die relative Geometrie zwischen Sonnen- und Sensorbeobachtungswinkeln.
 
-Studieren Sie jetzt das [Kapitel 2.5](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.0) (und [2.5.1](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.1)) des Eumetrain-Workshops zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
+Studieren Sie jetzt das [[http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.0|Kapitel 2.5]] (und [[http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.1|2.5.1]]) des Eumetrain-Workshops zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
 
 Kommen Sie anschließend wieder auf diese Seite zurück.
 
 Was sind die wichtigsten Aussagen?
 
 **Kapitel 2.5** stellt drei wichtige Typen der Streuung/Reflexion an Objekten vor
-
-*  Diffuse Streuung/Reflexion (diese wird auch Lambert’sche Reflektion genannt)
-
-*  Spiegelnde Reflexion
-
-*  Multiple Streuung an Komplex gegliederten Objekten
+* Diffuse Streuung/Reflexion (diese wird auch Lambert’sche Reflektion genannt)
+* Spiegelnde Reflexion
+* Multiple Streuung an Komplex gegliederten Objekten
 
 
 
 **Kapitel 2.5.1** diskutiert anschließend den Einfluss der Beobachtungsgeometrie auf das Sensorsignal. Die Quintessenz (auch der dargestellten Gleichung) ist, dass der Einfluss durch pixelbezogene Winkel bestimmt wird:
+* Sonnenzenith (also Winkel zwischen senkrechtem Sonnenstand und aktueller Sonnenhöhe)
+* Sensorzenith (analog Sonnenzenith)
+* Relative Azimuth – dieser ergibt sich aus der Kombination des Sonnenazimuth, also dem Winkel zwischen der Nordrichtung und der Position der Sonne, und dem Sensorazimuth, (analog Sonnenazimuth)
 
-*  Sonnenzenith (also Winkel zwischen senkrechtem Sonnenstand und aktueller Sonnenhöhe)
+=====Abbildungsgeometrie=====
 
-*  Sensorzenith (analog Sonnenzenith)
+Bei der [[courses:bsc:methoden-geoinformatik:lecture-notes:mg-ln-04#charakterisierung_von_fernerkundungssystemen|Charakterisierung von Fernerkundungssystemen]] in der letzten Sitzung, wurde der Begriff der räumlichen Auflösung bereits eingeführt. Dabei wurde die räumliche Auflösung als Eigenschaft beschrieben, die für jedes Fernerkundungssystem unterschiedlich ist. Die Frage die noch nicht beantwortet ist, ist daher die, ob denn die räumliche Auflösung “innerhalb” eines Fernerkundungssystems, also innerhalb z. B. des Satellitenbildes konstant ist. Zur Beantwortung dieser Frage, muss man zunächst einen Blick auf das Funktionsprinzip eines optischen Satellitensensors werfen.
 
-*  Relative Azimuth – dieser ergibt sich aus der Kombination des Sonnenazimuth, also dem Winkel zwischen der Nordrichtung und der Position der Sonne, und dem Sensorazimuth, (analog Sonnenazimuth)
-
-## Abbildungsgeometrie
-
-Bei der [Charakterisierung von Fernerkundungssystemen](courses/bsc/methoden-geoinformatik/lecture-notes/mg-ln-04#charakterisierung_von_fernerkundungssystemen) in der letzten Sitzung, wurde der Begriff der räumlichen Auflösung bereits eingeführt. Dabei wurde die räumliche Auflösung als Eigenschaft beschrieben, die für jedes Fernerkundungssystem unterschiedlich ist. Die Frage die noch nicht beantwortet ist, ist daher die, ob denn die räumliche Auflösung “innerhalb” eines Fernerkundungssystems, also innerhalb z. B. des Satellitenbildes konstant ist. Zur Beantwortung dieser Frage, muss man zunächst einen Blick auf das Funktionsprinzip eines optischen Satellitensensors werfen.
-
-### Optische Satellitensensoren
+### OptischeSatellitensensoren====
 
 Grundsätzlich kann man zwei technische Sensortypen unterscheiden: Along-Track-Scanner und Across-Track-Scanner.
 
-#### Along-Track-Scanner
+===Along-Track-Scanner===
 
 Der Scannertyp, der am ehesten einer klassichen Digitalkamera entspricht, ist der Along-Track-Scanner. Er besitzt zwar deutlich weniger weniger Sensorpixel als das Modell vom Fotogeschäft, aber dafür bewegt sich der Sensor auch weiter, so dass eigentlich immer nur ein Bildstreifen quer zur Flugrichtung erfasst werden muss.
 
 Die nachfolgende Abbildung illustriert dieses Prinzip. Die vom Objektiv erfasste und zu den Sensoren geleitete Strahlung kommt aus einem Streifen quer zur Flugrichtung. Je mehr Scannerpixel der Sensor hat und je schmaler der erfasste Querstreifen ist, um so größer ist die räumliche Auflösung und umgekehrt (die in der Abbildung auftauchenden Begriffe werden weiter unten erläutert). Die Auflösung in Flugrichtung wird folglich v. a. von der Geschwindigkeit der Sensorplattform bestimmt, die Auflösung quer zur Flugrichtung von der Anzahl der Sensorpixel.
 
-!["https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg"  title="05-04 by Environmental Informatics Marburg, on Flickr"](https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg)
+`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974917639" title="05-04 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg" width="1280" height="781" alt="05-04">``</a>``</html>`
 
 *Abbildung 05-04: Funktionsprinzip eines Along-Track-Scanners (lehrewelt.de, nach Lillesand et al. 2004)*
 
-#### Across-Track-Scanner
+===Across-Track-Scanner===
 
 Im Unterschied zum Along-Track-Scanner kommen Across-Track-Scanner bei gleicher Auflösung mit noch weniger Pixel aus. Der Grund hierfür liegt in einem schwenkbaren Spiegel, der vor dem Objektiv angebracht ist. Durch die schnelle Rotation des Spiegels lässt sich so die Erdoberfläche zeilenweise “abscannen”. Die Rotationsgeschwindigkeit des Spiegels ist dabei auf die Fluggeschwindigkeit des Satelliten (oder Flugzeugs) abgestimmt. Das Abscannen der Oberfläche in Flugrichtung ist folglich das Ergebnis der Bewegung des Fernerkundungssystems. Das Abscannen quer zur Flugrichtung ist das Ergebnis des rotierenden Spiegels. Da die Sensoren mehr als eine Sensorzelle haben, kann beim  Abscannen quer zur Flugrichtung gleich ein breiterer Streifen erfasst werden.
 
 
-!["https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg"  title="05-04 by Environmental Informatics Marburg, on Flickr"](https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg)
+`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974917639" title="05-04 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg" width="1280" height="781" alt="05-04">``</a>``</html>`
 
 *Abbildung 05-05: Funktionsprinzip eines Across-Track-Scanners (lehrewelt.de, nach Lillesand et al. 2004)*
 
-#### Nominelle räumliche Auflösung eines Fernerkundungssensors
+#### Nominelle räumliche Auflösung einesFernerkundungssensors===
 
 Die folgende Abbildung zeigt einen Schnitt durch die Abbildung des Across-Track-Prinzips quer zur Flugrichtung (analog für Along-Track). Der Punkt (bzw. besser die Linie), der sich lotrecht unter der Fernerkundungsplattform auf der Erdoberfläche befindet, nennt man Nadir. Die Breite des vom Sensor insgesamt quer zur Flugrichtung erfassten Streifens (ground swath in der vorherigen Abbildung) wird beim Across-Track-Scanner durch den Öffnungswinkel des Konstrukts aus Objektiv und Schwenkspiegel bestimmt. Dieser Öffnungswinkel wird als field of view (FOV) bezeichnet. Die Angabe des field of view als Öffnungswinkel mag zunächst ungewöhnlich erscheinen, aber wenn der Öffnungswinkel bekannt ist, kann man aus der Flughöhe des Fernerkundungssystems automatisch die Breite des quer zur Flugrichtung erfassten Oberflächenstreifens in Metern bestimmen. Bei Satellitensytemen, die im Gegensatz zu Flugzeugen immer in annähernd der gleichen Höhe fliegen (sollten), wird alternativ auch oft direkt die Breite des Streifens in Metern angegeben und diese Angabe trotzdem als FOV bezeichnet. Dabei weisen die FOV-Werte je nach Fernerkundungssystem beträchtliche Unterschiede auf. So liegt das FOV von Landsat-7-ETM+ bei 185 km, das von Terra-MODIS bei 2.330 km.
 
 
-!["https://farm3.staticflickr.com/2935/13974944958_8a99bbbfda_b.jpg"  title="05-06 by Environmental Informatics Marburg, on Flickr"](https://farm3.staticflickr.com/2935/13974944958_8a99bbbfda_b.jpg)
+`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974944958" title="05-06 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm3.staticflickr.com/2935/13974944958_8a99bbbfda_b.jpg" width="1024" height="910" alt="05-06">``</a>``</a>``</html>`
 
 *Abbildung 05-06: Beobachtungsgeometrie eines optischen Fernerkundungssensors (lehrewelt.de, nach Lillesand et al. 2004)*
 
@@ -209,9 +199,9 @@ Betrachten Sie noch einmal die vorherige Abbildung. Der Abstand zwischen Sensor 
 
 Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle gleich sein muss. In der Regel sind Kanäle im Bereich der solaren Strahlung besser aufgelöst als Kanäle im Bereich der terrestrischen Strahlung. Diese ist deutlich schwächer als die solare Strahlung, so dass die Sensorfläche vergrößert wird, um – absolut gesehen – einen höheren Strahlungseintrag auf dem Sensor zu bekommen. Für Landsat-7-ETM+ liegt die Auflösung im Nadir daher bei 30 x 30 m, im thermalen Infrarot bei 60 x 60 m.
 
----
+`<note>` **Weitere Informationen finden Sie…
 
 **
-  * …im Abschnitt zur [räumlichen Auflösung](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407) des [Tutoriums von Natural Resources Canada](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309).
----
+* …im Abschnitt zur [[http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407|räumlichen Auflösung]] des [[http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309|Tutoriums von Natural Resources Canada]].
+`</note>`
 
