@@ -13,14 +13,14 @@ Anders gesagt stellen wir die folgenden Fragen:
 
 ### Lernziele
 
-`<note important>`
+<note important>
 
 **Wenn Sie aufpassen, dann können Sie am Ende…**
 
       * …den Strahlungspfad zwischen Strahlungsquelle und Sensor erkläutern.
       * …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
       * …die Konsequenzen der Beobachtungsgeometrie auf die räumliche Auflösung erklären.
-`</note>`
+</note>
 
 ## Eigenschaften der Strahlungsquelle
 
@@ -38,19 +38,15 @@ Je wärmer ein Körper ist, umso kürzer ist die Wellenlänge, in der er die max
 Das Gesetz ist in der nachfolgenden Abbildung illustriert. Das Maximum der Strahlungskurven verschiebt sich dabei mit zunehmender Temperatur des strahlenden Körpers in den kurzwelligeren Bereich.
 
 Das Maximum der solaren Strahlung (Oberflächentemperatur der Sonne ca. 6.000 K) liegt demzufolge bei einer Wellenlänge von ca. 0,5 µm, also im Zentrum des sichtbaren Spektralbereichs. Das Maximum für einen Körper von ca. 3.000 K bei etwa 0,7 µm. Die Kurve für 300 K kann näherungsweise für die Abstrahlung der Erde dienen (eigentlich eher 255 K). Das Maximum der von der Erde abgestrahlten Energie ist demnach bei ca. 10 µm zu finden. Es fällt zudem auf, dass die kälteren Körper erst ab einer gewissen Wellenlänge eine nennenswerte Strahlung emittieren.
+<html>
 
-`<html>`
+<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" title="View from the west of the Fränkische Schweiz. In the center of the photo you can see the escarpment outlier // Walberla// "><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" width="450"  alt="Fränkische Schweiz Westrand"></a></a>
 
-`<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" title="View from the west of the Fränkische Schweiz. In the center of the photo you can see the escarpment outlier // Walberla// ">``<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" width="450"  alt="Fränkische Schweiz Westrand">``</a>``</a>`
-
-`</html>`
+</html>
 
 <html>
 
-<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"></a>
-</html>
-
-
+<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"/></a></html>
 
 *Abbildung 05-01: Emittierte Strahlung als Funktion der Oberflächentemperatur und Wellenlänge (public domain, via Wikimedia Commons*)
 
@@ -85,14 +81,14 @@ Was sind die wichtigsten Aussagen?
 * Die zweite Seite war eine Übung, die Sie anhand der Darstellungen oben zum Wien’schen Verschiebungsgesetzt locker beantworten können und der letzte Abschnitt war eine Zusammenfassung über Teile der letzten Sitzung.
 
 
-`<note>`
+<note>
 Weitere Informationen finden Sie…
 
 * in dem Abschnitt zur [[http://missionscience.nasa.gov/ems/01_intro.html|elektromagnetischen Strahlung]] und zu den [[http://missionscience.nasa.gov/ems/02_anatomy.html|Welleneigenschaften]] sowie
 * im Abschnitt zum [[http://missionscience.nasa.gov/ems/09_visiblelight.html|sichtbaren Licht]], [[http://missionscience.nasa.gov/ems/08_nearinfraredwaves.html|nahen Infrarot]], [[http://missionscience.nasa.gov/ems/07_infraredwaves.html|thermalem Infrarot]] und [[http://missionscience.nasa.gov/ems/06_microwaves.html|Mikrowellenbereich]]
 
 auf den Seiten des [[http://missionscience.nasa.gov/|NASA Science Mission Directorate]].
-`</note>`
+</note>
 
 
 
@@ -104,7 +100,7 @@ Die Strahlung legt auf Ihrem Weg zwischen der Strahlungsquelle und dem Fernerkun
 
 Das folgende Beispiel zeigt den Strahlungspfad und mögliche Interaktionen am Beispiel der Fernerkundung im Bereich der solaren und terrestrischen Strahlung. Für das Beispiel nehmen wir an, dass der Sensor gerade die Fläche des Sees “beobachtet”.
 
-`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/14161592595" title="05-02 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm3.staticflickr.com/2904/14161592595_0f5d08d003_o.jpg" width="2815" height="1972" alt="05-02">``</a>``</html>`
+<html><a href="https://www.flickr.com/photos/environmentalinformatics-marburg/14161592595" title="05-02 by Environmental Informatics Marburg, on Flickr"><img src="https://farm3.staticflickr.com/2904/14161592595_0f5d08d003_o.jpg" width="2815" height="1972" alt="05-02"></a></html>
 
 *Abbildung 05-02: Strahlungspfade in der optischen Fernerkundung (lehrewelt.de)*
 
@@ -139,7 +135,7 @@ Im Bereich des sichtbaren Lichts ist die atmosphärische Extinktion gering und d
 
 Im Bereich um 10 µm ist die Atmosphäre wieder weitgehend durchlässig. Dieser Bereich fällt mit dem Maximum der terrestrischen Strahlung zusammen, was eine fernerkundliche Messung der Oberflächentemperatur deutlich erleichtert.
 
-`<html>``<a title="By NASA (original); SVG by Mysid. [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AAtmospheric_electromagnetic_opacity.svg">``<img width="1024" alt="Atmospheric electromagnetic opacity" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric_electromagnetic_opacity.svg/512px-Atmospheric_electromagnetic_opacity.svg.png"/>``</a>``</html>`
+<html><a title="By NASA (original); SVG by Mysid. [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3AAtmospheric_electromagnetic_opacity.svg"><img width="1024" alt="Atmospheric electromagnetic opacity" src="//upload.wikimedia.org/wikipedia/commons/thumb/3/34/Atmospheric_electromagnetic_opacity.svg/512px-Atmospheric_electromagnetic_opacity.svg.png"/></a></html>
 *Abbildung 05-03: Atmosphärische Banden und Fenster (NASA, public domain, via Wikimedia Commons)*
 
 ## Spektrale Eigenschaften undWinkelabhängigkeit=====
@@ -178,7 +174,7 @@ Der Scannertyp, der am ehesten einer klassichen Digitalkamera entspricht, ist de
 
 Die nachfolgende Abbildung illustriert dieses Prinzip. Die vom Objektiv erfasste und zu den Sensoren geleitete Strahlung kommt aus einem Streifen quer zur Flugrichtung. Je mehr Scannerpixel der Sensor hat und je schmaler der erfasste Querstreifen ist, um so größer ist die räumliche Auflösung und umgekehrt (die in der Abbildung auftauchenden Begriffe werden weiter unten erläutert). Die Auflösung in Flugrichtung wird folglich v. a. von der Geschwindigkeit der Sensorplattform bestimmt, die Auflösung quer zur Flugrichtung von der Anzahl der Sensorpixel.
 
-`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974917639" title="05-04 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg" width="1280" height="781" alt="05-04">``</a>``</html>`
+<html><a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974917639" title="05-04 by Environmental Informatics Marburg, on Flickr"><img src="https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg" width="1280" height="781" alt="05-04"></a></html>
 
 *Abbildung 05-04: Funktionsprinzip eines Along-Track-Scanners (lehrewelt.de, nach Lillesand et al. 2004)*
 
@@ -187,7 +183,7 @@ Die nachfolgende Abbildung illustriert dieses Prinzip. Die vom Objektiv erfasste
 Im Unterschied zum Along-Track-Scanner kommen Across-Track-Scanner bei gleicher Auflösung mit noch weniger Pixel aus. Der Grund hierfür liegt in einem schwenkbaren Spiegel, der vor dem Objektiv angebracht ist. Durch die schnelle Rotation des Spiegels lässt sich so die Erdoberfläche zeilenweise “abscannen”. Die Rotationsgeschwindigkeit des Spiegels ist dabei auf die Fluggeschwindigkeit des Satelliten (oder Flugzeugs) abgestimmt. Das Abscannen der Oberfläche in Flugrichtung ist folglich das Ergebnis der Bewegung des Fernerkundungssystems. Das Abscannen quer zur Flugrichtung ist das Ergebnis des rotierenden Spiegels. Da die Sensoren mehr als eine Sensorzelle haben, kann beim  Abscannen quer zur Flugrichtung gleich ein breiterer Streifen erfasst werden.
 
 
-`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974917639" title="05-04 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg" width="1280" height="781" alt="05-04">``</a>``</html>`
+<html><a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974917639" title="05-04 by Environmental Informatics Marburg, on Flickr"><img src="https://farm8.staticflickr.com/7313/13974917639_d732b3d652_o.jpg" width="1280" height="781" alt="05-04"></a></html>
 
 *Abbildung 05-05: Funktionsprinzip eines Across-Track-Scanners (lehrewelt.de, nach Lillesand et al. 2004)*
 
@@ -196,7 +192,7 @@ Im Unterschied zum Along-Track-Scanner kommen Across-Track-Scanner bei gleicher 
 Die folgende Abbildung zeigt einen Schnitt durch die Abbildung des Across-Track-Prinzips quer zur Flugrichtung (analog für Along-Track). Der Punkt (bzw. besser die Linie), der sich lotrecht unter der Fernerkundungsplattform auf der Erdoberfläche befindet, nennt man Nadir. Die Breite des vom Sensor insgesamt quer zur Flugrichtung erfassten Streifens (ground swath in der vorherigen Abbildung) wird beim Across-Track-Scanner durch den Öffnungswinkel des Konstrukts aus Objektiv und Schwenkspiegel bestimmt. Dieser Öffnungswinkel wird als field of view (FOV) bezeichnet. Die Angabe des field of view als Öffnungswinkel mag zunächst ungewöhnlich erscheinen, aber wenn der Öffnungswinkel bekannt ist, kann man aus der Flughöhe des Fernerkundungssystems automatisch die Breite des quer zur Flugrichtung erfassten Oberflächenstreifens in Metern bestimmen. Bei Satellitensytemen, die im Gegensatz zu Flugzeugen immer in annähernd der gleichen Höhe fliegen (sollten), wird alternativ auch oft direkt die Breite des Streifens in Metern angegeben und diese Angabe trotzdem als FOV bezeichnet. Dabei weisen die FOV-Werte je nach Fernerkundungssystem beträchtliche Unterschiede auf. So liegt das FOV von Landsat-7-ETM+ bei 185 km, das von Terra-MODIS bei 2.330 km.
 
 
-`<html>``<a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974944958" title="05-06 by Environmental Informatics Marburg, on Flickr">``<img src="https://farm3.staticflickr.com/2935/13974944958_8a99bbbfda_b.jpg" width="1024" height="910" alt="05-06">``</a>``</a>``</html>`
+<html><a href="https://www.flickr.com/photos/environmentalinformatics-marburg/13974944958" title="05-06 by Environmental Informatics Marburg, on Flickr"><img src="https://farm3.staticflickr.com/2935/13974944958_8a99bbbfda_b.jpg" width="1024" height="910" alt="05-06"></a></a></html>
 
 *Abbildung 05-06: Beobachtungsgeometrie eines optischen Fernerkundungssensors (lehrewelt.de, nach Lillesand et al. 2004)*
 
@@ -208,8 +204,9 @@ Betrachten Sie noch einmal die vorherige Abbildung. Der Abstand zwischen Sensor 
 
 Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle gleich sein muss. In der Regel sind Kanäle im Bereich der solaren Strahlung besser aufgelöst als Kanäle im Bereich der terrestrischen Strahlung. Diese ist deutlich schwächer als die solare Strahlung, so dass die Sensorfläche vergrößert wird, um – absolut gesehen – einen höheren Strahlungseintrag auf dem Sensor zu bekommen. Für Landsat-7-ETM+ liegt die Auflösung im Nadir daher bei 30 x 30 m, im thermalen Infrarot bei 60 x 60 m.
 
-`<note>` **Weitere Informationen finden Sie…
+<note> **Weitere Informationen finden Sie…
 
 **
 * …im Abschnitt zur [[http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407|räumlichen Auflösung]] des [[http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309|Tutoriums von Natural Resources Canada]].
-`</note>`
+</note>
+
