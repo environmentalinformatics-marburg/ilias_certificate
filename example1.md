@@ -41,7 +41,10 @@ Das Maximum der solaren Strahlung (Oberflächentemperatur der Sonne ca. 6.000 K)
 
 <html>
 
-`<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png">``<img width="512" alt="Planck law log log scale" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"/>``</a>`</html>
+<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" title="View from the west of the Fränkische Schweiz. In the center of the photo you can see the escarpment outlier // Walberla// "><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" width="450"  alt="Fränkische Schweiz Westrand"></a></a>
+
+</html> 
+
 
 *Abbildung 05-01: Emittierte Strahlung als Funktion der Oberflächentemperatur und Wellenlänge (public domain, via Wikimedia Commons*)
 
