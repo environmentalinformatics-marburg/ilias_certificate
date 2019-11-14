@@ -47,7 +47,7 @@ Das Maximum der solaren Strahlung (Oberflächentemperatur der Sonne ca. 6.000 K)
 
 <html>
 
-<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"></a>
+<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"></a>
 </html>
 
 
