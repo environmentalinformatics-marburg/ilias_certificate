@@ -1,4 +1,3 @@
-
 # R05: Strahlung und Geometrie
 
 Nachdem Sie in der letzten Sitzung schon einiges über Fernerkudnung erfahren haben, greifen wir in dieser Sitzung noch einmal zwei Themen heraus, die etwas genauer beleuchtet werden: den Strahlungspfad, also den Weg zwischen Strahlungsquelle und Sensor und die Aufnahmegeometrie. Beide Themen behandeln wir ausschließlich am Beispiel von passiven optischen Fernerkundungssystemen.
@@ -18,7 +17,7 @@ Anders gesagt stellen wir die folgenden Fragen:
 **Wenn Sie aufpassen, dann können Sie am Ende…**
 
       * …den Strahlungspfad zwischen Strahlungsquelle und Sensor erkläutern.
-      * …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
+      *  …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
       * …die Konsequenzen der Beobachtungsgeometrie auf die räumliche Auflösung erklären.
 </note>
 
@@ -38,15 +37,8 @@ Je wärmer ein Körper ist, umso kürzer ist die Wellenlänge, in der er die max
 Das Gesetz ist in der nachfolgenden Abbildung illustriert. Das Maximum der Strahlungskurven verschiebt sich dabei mit zunehmender Temperatur des strahlenden Körpers in den kurzwelligeren Bereich.
 
 Das Maximum der solaren Strahlung (Oberflächentemperatur der Sonne ca. 6.000 K) liegt demzufolge bei einer Wellenlänge von ca. 0,5 µm, also im Zentrum des sichtbaren Spektralbereichs. Das Maximum für einen Körper von ca. 3.000 K bei etwa 0,7 µm. Die Kurve für 300 K kann näherungsweise für die Abstrahlung der Erde dienen (eigentlich eher 255 K). Das Maximum der von der Erde abgestrahlten Energie ist demnach bei ca. 10 µm zu finden. Es fällt zudem auf, dass die kälteren Körper erst ab einer gewissen Wellenlänge eine nennenswerte Strahlung emittieren.
-<html>
 
-<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" title="View from the west of the Fränkische Schweiz. In the center of the photo you can see the escarpment outlier // Walberla// "><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" width="450"  alt="Fränkische Schweiz Westrand"></a></a>
-
-</html> 
-
-<html>
-
-<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"/></a></html>
+<html><a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="//upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"/></a></html>
 
 *Abbildung 05-01: Emittierte Strahlung als Funktion der Oberflächentemperatur und Wellenlänge (public domain, via Wikimedia Commons*)
 
@@ -70,7 +62,7 @@ Nur nebenbei: Die ebenfalls aus der Abbildung für das Wien’sche Verschiebungs
 
 Die Ausführungen auf dieser Seite haben Sie fit gemacht, auch einmal einen anderen Text zu lesen.
 
-Studieren Sie jetzt das [http://www.eumetrain.org/data/3/36/navmenu.php?page=2.1.0 Kapitel 2.1 des Eumetrain-Workshops](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.1.0 Kapitel 2.1 des Eumetrain-Workshops) zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
+Studieren Sie jetzt das [Kapitel 2.1 des Eumetrain-Workshops](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.1.0) zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
 
 Kommen Sie anschließend wieder auf diese Seite zurück.
 
@@ -150,8 +142,7 @@ Im Bereich um 10 µm ist die Atmosphäre wieder weitgehend durchlässig. Dieser 
 
 Neben den Eigenschaften des beobachteten Objekts und den Eigenschaften der Atmosphäre hat auch die Beobachtungsgeometrie einen Einfluss auf das gemessene Strahlungssignal. Unter Beobachtungsgeometrie versteht man die relative Geometrie zwischen Sonnen- und Sensorbeobachtungswinkeln.
 
-Studieren Sie jetzt das [Kapitel 2.5](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.0)
- und [2.5.1](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.1) des Eumetrain-Workshops zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
+Studieren Sie jetzt das [Kapitel 2.5](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.0) (und [2.5.1](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.1)) des Eumetrain-Workshops zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
 
 Kommen Sie anschließend wieder auf diese Seite zurück.
 
@@ -225,4 +216,3 @@ Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle glei
 
 *  …im Abschnitt zur [räumlichen Auflösung](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407) des [Tutoriums von Natural Resources Canada](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309).
 </note>
-
