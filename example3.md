@@ -39,14 +39,11 @@ Das Gesetz ist in der nachfolgenden Abbildung illustriert. Das Maximum der Strah
 Das Maximum der solaren Strahlung (Oberflächentemperatur der Sonne ca. 6.000 K) liegt demzufolge bei einer Wellenlänge von ca. 0,5 µm, also im Zentrum des sichtbaren Spektralbereichs. Das Maximum für einen Körper von ca. 3.000 K bei etwa 0,7 µm. Die Kurve für 300 K kann näherungsweise für die Abstrahlung der Erde dienen (eigentlich eher 255 K). Das Maximum der von der Erde abgestrahlten Energie ist demnach bei ca. 10 µm zu finden. Es fällt zudem auf, dass die kälteren Körper erst ab einer gewissen Wellenlänge eine nennenswerte Strahlung emittieren.
 
 <html>
-
 <a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" title="View from the west of the Fränkische Schweiz. In the center of the photo you can see the escarpment outlier // Walberla// "><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg/640px-Fr%C3%A4nkische-Schweiz-westliche-Kante-16-05-2005.jpeg?uselang=de" width="450"  alt="Fränkische Schweiz Westrand"></a></a>
 
 </html> 
 
-<html>
-
-<a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"/></a></html>
+<html><a title="By HighTemplar (Own work) [Public domain], via Wikimedia Commons" href="http://commons.wikimedia.org/wiki/File%3APlanck_law_log_log_scale.png"><img width="512" alt="Planck law log log scale" src="http://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Planck_law_log_log_scale.png/512px-Planck_law_log_log_scale.png"/></a></html>
 
 
 
