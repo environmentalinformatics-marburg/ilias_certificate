@@ -150,7 +150,8 @@ Im Bereich um 10 µm ist die Atmosphäre wieder weitgehend durchlässig. Dieser 
 
 Neben den Eigenschaften des beobachteten Objekts und den Eigenschaften der Atmosphäre hat auch die Beobachtungsgeometrie einen Einfluss auf das gemessene Strahlungssignal. Unter Beobachtungsgeometrie versteht man die relative Geometrie zwischen Sonnen- und Sensorbeobachtungswinkeln.
 
-Studieren Sie jetzt das [Kapitel 2.5](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.0) (und [2.5.1](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.1)) des Eumetrain-Workshops zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
+Studieren Sie jetzt das [Kapitel 2.5](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.0)
+ und [2.5.1](http://www.eumetrain.org/data/3/36/navmenu.php?page=2.5.1) des Eumetrain-Workshops zur Vegetationsfernerkundung und machen Sie die interaktiven Übungen.
 
 Kommen Sie anschließend wieder auf diese Seite zurück.
 
