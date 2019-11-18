@@ -210,7 +210,8 @@ Betrachten Sie noch einmal die vorherige Abbildung. Der Abstand zwischen Sensor 
 
 Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle gleich sein muss. In der Regel sind Kanäle im Bereich der solaren Strahlung besser aufgelöst als Kanäle im Bereich der terrestrischen Strahlung. Diese ist deutlich schwächer als die solare Strahlung, so dass die Sensorfläche vergrößert wird, um – absolut gesehen – einen höheren Strahlungseintrag auf dem Sensor zu bekommen. Für Landsat-7-ETM+ liegt die Auflösung im Nadir daher bei 30 x 30 m, im thermalen Infrarot bei 60 x 60 m.
 
---- **Weitere Informationen finden Sie…
+--- 
+**Weitere Informationen finden Sie…
 
 **
 
