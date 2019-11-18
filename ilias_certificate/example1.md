@@ -13,7 +13,8 @@ Anders gesagt stellen wir die folgenden Fragen:
 
 ### Lernziele
 
---- **Wenn Sie aufpassen, dann können Sie am Ende…**
+--- 
+**Wenn Sie aufpassen, dann können Sie am Ende…**
 
       * …den Strahlungspfad zwischen Strahlungsquelle und Sensor erkläutern.
       *  …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
