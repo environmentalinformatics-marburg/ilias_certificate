@@ -14,7 +14,8 @@ Anders gesagt stellen wir die folgenden Fragen:
 ### Lernziele
 
 --- 
-**Wenn Sie aufpassen, dann können Sie am Ende…**
+
+  **Wenn Sie aufpassen, dann können Sie am Ende…**
 
       * …den Strahlungspfad zwischen Strahlungsquelle und Sensor erkläutern.
       *  …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
@@ -148,7 +149,7 @@ Kommen Sie anschließend wieder auf diese Seite zurück.
 
 Was sind die wichtigsten Aussagen?
 
-**Kapitel 2.5** stellt drei wichtige Typen der Streuung/Reflexion an Objekten vor
+Kapitel 2.5** stellt drei wichtige Typen der Streuung/Reflexion an Objekten vor
 
 *  Diffuse Streuung/Reflexion (diese wird auch Lambert’sche Reflektion genannt)
 
@@ -158,7 +159,7 @@ Was sind die wichtigsten Aussagen?
 
 
 
-**Kapitel 2.5.1** diskutiert anschließend den Einfluss der Beobachtungsgeometrie auf das Sensorsignal. Die Quintessenz (auch der dargestellten Gleichung) ist, dass der Einfluss durch pixelbezogene Winkel bestimmt wird:
+Kapitel 2.5.1** diskutiert anschließend den Einfluss der Beobachtungsgeometrie auf das Sensorsignal. Die Quintessenz (auch der dargestellten Gleichung) ist, dass der Einfluss durch pixelbezogene Winkel bestimmt wird:
 
 *  Sonnenzenith (also Winkel zwischen senkrechtem Sonnenstand und aktueller Sonnenhöhe)
 
@@ -211,9 +212,9 @@ Betrachten Sie noch einmal die vorherige Abbildung. Der Abstand zwischen Sensor 
 Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle gleich sein muss. In der Regel sind Kanäle im Bereich der solaren Strahlung besser aufgelöst als Kanäle im Bereich der terrestrischen Strahlung. Diese ist deutlich schwächer als die solare Strahlung, so dass die Sensorfläche vergrößert wird, um – absolut gesehen – einen höheren Strahlungseintrag auf dem Sensor zu bekommen. Für Landsat-7-ETM+ liegt die Auflösung im Nadir daher bei 30 x 30 m, im thermalen Infrarot bei 60 x 60 m.
 
 --- 
-**Weitere Informationen finden Sie…
 
-**
+  **Weitere Informationen finden Sie…
+
 
 *  …im Abschnitt zur [räumlichen Auflösung](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407) des [Tutoriums von Natural Resources Canada](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309).
 ---
