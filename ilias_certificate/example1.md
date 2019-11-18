@@ -149,7 +149,7 @@ Kommen Sie anschließend wieder auf diese Seite zurück.
 
 Was sind die wichtigsten Aussagen?
 
-Kapitel 2.5** stellt drei wichtige Typen der Streuung/Reflexion an Objekten vor
+**Kapitel 2.5** stellt drei wichtige Typen der Streuung/Reflexion an Objekten vor
 
 *  Diffuse Streuung/Reflexion (diese wird auch Lambert’sche Reflektion genannt)
 
@@ -159,7 +159,7 @@ Kapitel 2.5** stellt drei wichtige Typen der Streuung/Reflexion an Objekten vor
 
 
 
-Kapitel 2.5.1** diskutiert anschließend den Einfluss der Beobachtungsgeometrie auf das Sensorsignal. Die Quintessenz (auch der dargestellten Gleichung) ist, dass der Einfluss durch pixelbezogene Winkel bestimmt wird:
+**Kapitel 2.5.1** diskutiert anschließend den Einfluss der Beobachtungsgeometrie auf das Sensorsignal. Die Quintessenz (auch der dargestellten Gleichung) ist, dass der Einfluss durch pixelbezogene Winkel bestimmt wird:
 
 *  Sonnenzenith (also Winkel zwischen senkrechtem Sonnenstand und aktueller Sonnenhöhe)
 
@@ -213,8 +213,7 @@ Abschließend sei noch erwähnt, dass das FOV nicht für alle Sensorkanäle glei
 
 --- 
 
-  **Weitere Informationen finden Sie…
-
+  **Weitere Informationen finden Sie…**
 
 *  …im Abschnitt zur [räumlichen Auflösung](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9407) des [Tutoriums von Natural Resources Canada](http://www.nrcan.gc.ca/earth-sciences/geomatics/satellite-imagery-air-photos/satellite-imagery-products/educational-resources/9309).
 ---
