@@ -13,14 +13,14 @@ Anders gesagt stellen wir die folgenden Fragen:
 
 ### Lernziele
 
-`<note important>`
+<note important>
 
 **Wenn Sie aufpassen, dann können Sie am Ende…**
 
       * …den Strahlungspfad zwischen Strahlungsquelle und Sensor erkläutern.
       *  …die das elektromagnetische Spektrum beeinflussenden Faktoren im Strahlungspfad  diskutieren.
       * …die Konsequenzen der Beobachtungsgeometrie auf die räumliche Auflösung erklären.
-`</note>`
+</note>
 
 ## Eigenschaften der Strahlungsquelle
 
